@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SportsTracer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SportsTracerDEV" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xPM-n5-bpE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SeX-Cu-eXt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -70,14 +71,14 @@
             </objects>
             <point key="canvasLocation" x="1237.68115942029" y="919.41964285714278"/>
         </scene>
-        <!--Tasks-->
+        <!--Goals-->
         <scene sceneID="9Zp-Eg-GM4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T4u-wS-g8O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Tasks" image="sportscourt.fill" catalog="system" id="FMg-bx-REg"/>
+                    <tabBarItem key="tabBarItem" title="Goals" image="sportscourt.fill" catalog="system" id="FMg-bx-REg"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4b0-CF-LOk">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4b0-CF-LOk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -89,14 +90,14 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
-        <!--My-->
+        <!--User-->
         <scene sceneID="YLa-i1-Hyn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gsA-gy-NZt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My" image="person.crop.square.fill" catalog="system" id="tn9-8R-3nJ"/>
+                    <tabBarItem key="tabBarItem" title="User" image="person.crop.square.fill" catalog="system" id="tn9-8R-3nJ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MSe-hD-bQ7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="MSe-hD-bQ7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
