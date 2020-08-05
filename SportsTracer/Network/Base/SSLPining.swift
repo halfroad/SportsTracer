@@ -38,7 +38,7 @@ class SSLPinning: NSObject {
 
 extension SSLPinning {
     
-    private func findCertificates() -> [NSData] {
+    private func findBundledCertificates() -> [NSData] {
         
         let paths = Bundle.main.paths(forResourcesOfType: "cer", inDirectory: ".")
         var certificates = [NSData]()
@@ -63,7 +63,7 @@ extension SSLPinning {
         
         SecTrustSetPolicies(trust, policies as CFTypeRef)
         
-        let lcoalCerfiticates = self.findCertificates()
+        let lcoalCerfiticates = self.findBundledCertificates()
         var pinnedCerfiticates = [SecCertificate]()
         
         for certificateData in lcoalCerfiticates {

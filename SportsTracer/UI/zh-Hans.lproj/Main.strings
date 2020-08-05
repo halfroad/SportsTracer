@@ -1,0 +1,9 @@
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "AJ6-H7-i1k"; */
+"AJ6-H7-i1k.title" = "首页";
+
+/* Class = "UITabBarItem"; title = "Goals"; ObjectID = "zov-uV-Jjc"; */
+"zov-uV-Jjc.title" = "目标";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "kRf-QU-dUn"; */
+"kRf-QU-dUn.title" = "设置";

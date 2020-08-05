@@ -10,7 +10,6 @@
 		0A6531852BB62CD2931A353C /* Pods_SportsTracerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D97CBA9629AEB67C113E014 /* Pods_SportsTracerTests.framework */; };
 		25714AED3F26C423446D6D70 /* Pods_SportsTracer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A43D0C6E9378209E1CF449B /* Pods_SportsTracer.framework */; };
 		CDB66342EB573BC81BC6DDC0 /* Pods_SportsTracer_SportsTracerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 045F43C0F82ABABAE397C81D /* Pods_SportsTracer_SportsTracerUITests.framework */; };
-		EE090F2F24DAB24800300A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D224D8171600BC147A /* ViewController.swift */; };
 		EE090F3024DAB24800300A4F /* NetwortService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0F24D823EF00BC147A /* NetwortService.swift */; };
 		EE090F3124DAB24800300A4F /* SportsTracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D724D8171600BC147A /* SportsTracer.xcdatamodeld */; };
 		EE090F3224DAB24800300A4F /* SSLPining.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0124D81CDA00BC147A /* SSLPining.swift */; };
@@ -21,7 +20,6 @@
 		EE090F3924DAB24800300A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
 		EE090F3A24DAB24800300A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
 		EE090F3B24DAB24800300A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59D424D8171600BC147A /* Main.storyboard */; };
-		EE090F4524DAB25700300A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D224D8171600BC147A /* ViewController.swift */; };
 		EE090F4624DAB25700300A4F /* NetwortService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0F24D823EF00BC147A /* NetwortService.swift */; };
 		EE090F4724DAB25700300A4F /* SportsTracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D724D8171600BC147A /* SportsTracer.xcdatamodeld */; };
 		EE090F4824DAB25700300A4F /* SSLPining.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0124D81CDA00BC147A /* SSLPining.swift */; };
@@ -32,7 +30,6 @@
 		EE090F4F24DAB25700300A4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
 		EE090F5024DAB25700300A4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
 		EE090F5124DAB25700300A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59D424D8171600BC147A /* Main.storyboard */; };
-		EE090F5B24DAB25F00300A4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D224D8171600BC147A /* ViewController.swift */; };
 		EE090F5C24DAB25F00300A4F /* NetwortService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0F24D823EF00BC147A /* NetwortService.swift */; };
 		EE090F5D24DAB25F00300A4F /* SportsTracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D724D8171600BC147A /* SportsTracer.xcdatamodeld */; };
 		EE090F5E24DAB25F00300A4F /* SSLPining.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0124D81CDA00BC147A /* SSLPining.swift */; };
@@ -47,13 +44,40 @@
 		EE090F7824DAB54000300A4F /* HealthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F7624DAB54000300A4F /* HealthDataManager.swift */; };
 		EE090F7924DAB54000300A4F /* HealthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F7624DAB54000300A4F /* HealthDataManager.swift */; };
 		EE090F7A24DAB54000300A4F /* HealthDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F7624DAB54000300A4F /* HealthDataManager.swift */; };
-		EE090F7C24DAB80400300A4F /* SportsTracerDEV-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE090F7B24DAB80400300A4F /* SportsTracerDEV-Info.plist */; };
-		EE090F7E24DAB80F00300A4F /* SportsTracerQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE090F7D24DAB80F00300A4F /* SportsTracerQA-Info.plist */; };
-		EE090F8024DAB81900300A4F /* SportsTracerUAT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE090F7F24DAB81900300A4F /* SportsTracerUAT-Info.plist */; };
-		EE090F8224DAB82200300A4F /* SportsTracerPROD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE090F8124DAB82200300A4F /* SportsTracerPROD-Info.plist */; };
+		EE090F9524DADA0200300A4F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9424DADA0200300A4F /* Settings.swift */; };
+		EE090F9624DADA0200300A4F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9424DADA0200300A4F /* Settings.swift */; };
+		EE090F9724DADA0200300A4F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9424DADA0200300A4F /* Settings.swift */; };
+		EE090F9824DADA0200300A4F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9424DADA0200300A4F /* Settings.swift */; };
+		EE090F9B24DADA7E00300A4F /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9A24DADA7E00300A4F /* Goal.swift */; };
+		EE090F9C24DADA7E00300A4F /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9A24DADA7E00300A4F /* Goal.swift */; };
+		EE090F9D24DADA7E00300A4F /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9A24DADA7E00300A4F /* Goal.swift */; };
+		EE090F9E24DADA7E00300A4F /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F9A24DADA7E00300A4F /* Goal.swift */; };
+		EE090FA124DADD8200300A4F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090FA024DADD8200300A4F /* ErrorHandling.swift */; };
+		EE090FA224DADD8200300A4F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090FA024DADD8200300A4F /* ErrorHandling.swift */; };
+		EE090FA324DADD8200300A4F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090FA024DADD8200300A4F /* ErrorHandling.swift */; };
+		EE090FA424DADD8200300A4F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090FA024DADD8200300A4F /* ErrorHandling.swift */; };
+		EE48CB1924DAEDCB00BD04E1 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F8E24DAD98A00300A4F /* GoalService.swift */; };
+		EE48CB1A24DAEDCD00BD04E1 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F8E24DAD98A00300A4F /* GoalService.swift */; };
+		EE48CB1B24DAEDCF00BD04E1 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F8E24DAD98A00300A4F /* GoalService.swift */; };
+		EE48CB1C24DAEDD000BD04E1 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F8E24DAD98A00300A4F /* GoalService.swift */; };
+		EE48CB1D24DAEDD900BD04E1 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */; };
+		EE48CB2024DAF95F00BD04E1 /* AppSpot.cer in Resources */ = {isa = PBXBuildFile; fileRef = EE48CB1F24DAF95F00BD04E1 /* AppSpot.cer */; };
+		EE48CB2124DAF95F00BD04E1 /* AppSpot.cer in Resources */ = {isa = PBXBuildFile; fileRef = EE48CB1F24DAF95F00BD04E1 /* AppSpot.cer */; };
+		EE48CB2224DAF95F00BD04E1 /* AppSpot.cer in Resources */ = {isa = PBXBuildFile; fileRef = EE48CB1F24DAF95F00BD04E1 /* AppSpot.cer */; };
+		EE48CB2324DAF95F00BD04E1 /* AppSpot.cer in Resources */ = {isa = PBXBuildFile; fileRef = EE48CB1F24DAF95F00BD04E1 /* AppSpot.cer */; };
+		EED398CC24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */; };
+		EED398CD24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */; };
+		EED398CE24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */; };
+		EED398CF24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */; };
+		EED398D424DAE7F000D0C0E7 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */; };
+		EED398D524DAE7F000D0C0E7 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */; };
+		EED398D624DAE7F000D0C0E7 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */; };
+		EED398E324DAEB9900D0C0E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */; };
+		EED398E424DAEB9900D0C0E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */; };
+		EED398E524DAEB9900D0C0E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */; };
+		EED398E624DAEB9900D0C0E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */; };
 		FADF59CF24D8171600BC147A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59CE24D8171600BC147A /* AppDelegate.swift */; };
 		FADF59D124D8171600BC147A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D024D8171600BC147A /* SceneDelegate.swift */; };
-		FADF59D324D8171600BC147A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D224D8171600BC147A /* ViewController.swift */; };
 		FADF59D624D8171600BC147A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59D424D8171600BC147A /* Main.storyboard */; };
 		FADF59D924D8171600BC147A /* SportsTracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D724D8171600BC147A /* SportsTracer.xcdatamodeld */; };
 		FADF59DB24D8171800BC147A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
@@ -96,16 +120,23 @@
 		EE090F5624DAB25700300A4F /* SportsTracerUAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTracerUAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE090F6C24DAB25F00300A4F /* SportsTracerPROD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTracerPROD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE090F6E24DAB40B00300A4F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		EE090F6F24DAB40B00300A4F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		EE090F7624DAB54000300A4F /* HealthDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataManager.swift; sourceTree = "<group>"; };
 		EE090F7B24DAB80400300A4F /* SportsTracerDEV-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SportsTracerDEV-Info.plist"; sourceTree = "<group>"; };
 		EE090F7D24DAB80F00300A4F /* SportsTracerQA-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SportsTracerQA-Info.plist"; sourceTree = "<group>"; };
 		EE090F7F24DAB81900300A4F /* SportsTracerUAT-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SportsTracerUAT-Info.plist"; sourceTree = "<group>"; };
 		EE090F8124DAB82200300A4F /* SportsTracerPROD-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SportsTracerPROD-Info.plist"; sourceTree = "<group>"; };
+		EE090F8E24DAD98A00300A4F /* GoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalService.swift; sourceTree = "<group>"; };
+		EE090F9424DADA0200300A4F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		EE090F9A24DADA7E00300A4F /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		EE090FA024DADD8200300A4F /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		EE48CB1F24DAF95F00BD04E1 /* AppSpot.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppSpot.cer; sourceTree = "<group>"; };
+		EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
+		EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EED398E924DAEC8900D0C0E7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		FADF59CB24D8171600BC147A /* SportsTracerDEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTracerDEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADF59CE24D8171600BC147A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADF59D024D8171600BC147A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FADF59D224D8171600BC147A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FADF59D524D8171600BC147A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FADF59D824D8171600BC147A /* SportsTracer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SportsTracer.xcdatamodel; sourceTree = "<group>"; };
 		FADF59DA24D8171800BC147A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -204,11 +235,68 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		FAA5249E24D9901500DC04F6 /* Services */ = {
+		EE090F8D24DAD96700300A4F /* Goals */ = {
 			isa = PBXGroup;
 			children = (
+				EE090F8E24DAD98A00300A4F /* GoalService.swift */,
 			);
-			path = Services;
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		EE090F9324DAD9E700300A4F /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				EE090F9424DADA0200300A4F /* Settings.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		EE090F9924DADA5D00300A4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE090F9A24DADA7E00300A4F /* Goal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE090F9F24DADB9900300A4F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE090FA024DADD8200300A4F /* ErrorHandling.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EE48CB1E24DAF94700BD04E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE48CB1F24DAF95F00BD04E1 /* AppSpot.cer */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EED398CA24DAE64600D0C0E7 /* Goals */ = {
+			isa = PBXGroup;
+			children = (
+				EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */,
+			);
+			path = Goals;
+			sourceTree = "<group>";
+		};
+		EED398D124DAE67D00D0C0E7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EED398E724DAEB9C00D0C0E7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		FADF59C224D8171600BC147A = {
@@ -240,11 +328,15 @@
 			isa = PBXGroup;
 			children = (
 				FADF59DA24D8171800BC147A /* Assets.xcassets */,
+				EE090F9324DAD9E700300A4F /* Global */,
 				EE090F7524DAB51000300A4F /* Managers */,
+				EE090F9924DADA5D00300A4F /* Models */,
 				FADF5A0E24D8235700BC147A /* Network */,
 				FADF5A0B24D8218900BC147A /* Persistence */,
+				EE48CB1E24DAF94700BD04E1 /* Resources */,
 				FADF5A0A24D8215800BC147A /* Supporting Files */,
-				FADF5A0D24D821D900BC147A /* UserInterfaces */,
+				FADF5A0D24D821D900BC147A /* UI */,
+				EE090F9F24DADB9900300A4F /* Utilities */,
 				FADF5A0C24D821CD00BC147A /* ViewControllers */,
 			);
 			path = SportsTracer;
@@ -302,25 +394,27 @@
 		FADF5A0C24D821CD00BC147A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FADF59D224D8171600BC147A /* ViewController.swift */,
+				EED398CA24DAE64600D0C0E7 /* Goals */,
+				EED398E724DAEB9C00D0C0E7 /* Home */,
+				EED398D124DAE67D00D0C0E7 /* Settings */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		FADF5A0D24D821D900BC147A /* UserInterfaces */ = {
+		FADF5A0D24D821D900BC147A /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */,
 				FADF59D424D8171600BC147A /* Main.storyboard */,
 			);
-			path = UserInterfaces;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		FADF5A0E24D8235700BC147A /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EE090F8D24DAD96700300A4F /* Goals */,
 				FADF5A0924D8212200BC147A /* Base */,
-				FAA5249E24D9901500DC04F6 /* Services */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -497,8 +591,8 @@
 			files = (
 				EE090F3924DAB24800300A4F /* LaunchScreen.storyboard in Resources */,
 				EE090F3A24DAB24800300A4F /* Assets.xcassets in Resources */,
-				EE090F7E24DAB80F00300A4F /* SportsTracerQA-Info.plist in Resources */,
 				EE090F3B24DAB24800300A4F /* Main.storyboard in Resources */,
+				EE48CB2124DAF95F00BD04E1 /* AppSpot.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +603,7 @@
 				EE090F4F24DAB25700300A4F /* LaunchScreen.storyboard in Resources */,
 				EE090F5024DAB25700300A4F /* Assets.xcassets in Resources */,
 				EE090F5124DAB25700300A4F /* Main.storyboard in Resources */,
-				EE090F8024DAB81900300A4F /* SportsTracerUAT-Info.plist in Resources */,
+				EE48CB2224DAF95F00BD04E1 /* AppSpot.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +614,7 @@
 				EE090F6524DAB25F00300A4F /* LaunchScreen.storyboard in Resources */,
 				EE090F6624DAB25F00300A4F /* Assets.xcassets in Resources */,
 				EE090F6724DAB25F00300A4F /* Main.storyboard in Resources */,
-				EE090F8224DAB82200300A4F /* SportsTracerPROD-Info.plist in Resources */,
+				EE48CB2324DAF95F00BD04E1 /* AppSpot.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,10 +622,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE090F7C24DAB80400300A4F /* SportsTracerDEV-Info.plist in Resources */,
 				FADF59DE24D8171800BC147A /* LaunchScreen.storyboard in Resources */,
 				FADF59DB24D8171800BC147A /* Assets.xcassets in Resources */,
 				FADF59D624D8171600BC147A /* Main.storyboard in Resources */,
+				EE48CB2024DAF95F00BD04E1 /* AppSpot.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -776,12 +870,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE090F2F24DAB24800300A4F /* ViewController.swift in Sources */,
+				EED398D424DAE7F000D0C0E7 /* GoalsViewController.swift in Sources */,
 				EE090F3024DAB24800300A4F /* NetwortService.swift in Sources */,
 				EE090F3124DAB24800300A4F /* SportsTracer.xcdatamodeld in Sources */,
+				EE090F9624DADA0200300A4F /* Settings.swift in Sources */,
+				EED398E424DAEB9900D0C0E7 /* HomeViewController.swift in Sources */,
 				EE090F3224DAB24800300A4F /* SSLPining.swift in Sources */,
+				EE48CB1A24DAEDCD00BD04E1 /* GoalService.swift in Sources */,
+				EE090F9C24DADA7E00300A4F /* Goal.swift in Sources */,
 				EE090F7824DAB54000300A4F /* HealthDataManager.swift in Sources */,
 				EE090F3324DAB24800300A4F /* SecuredNetworkService.swift in Sources */,
+				EE090FA224DADD8200300A4F /* ErrorHandling.swift in Sources */,
+				EED398CD24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */,
 				EE090F3424DAB24800300A4F /* AppDelegate.swift in Sources */,
 				EE090F3524DAB24800300A4F /* SceneDelegate.swift in Sources */,
 			);
@@ -791,12 +891,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE090F4524DAB25700300A4F /* ViewController.swift in Sources */,
+				EED398D524DAE7F000D0C0E7 /* GoalsViewController.swift in Sources */,
 				EE090F4624DAB25700300A4F /* NetwortService.swift in Sources */,
 				EE090F4724DAB25700300A4F /* SportsTracer.xcdatamodeld in Sources */,
+				EE090F9724DADA0200300A4F /* Settings.swift in Sources */,
+				EED398E524DAEB9900D0C0E7 /* HomeViewController.swift in Sources */,
 				EE090F4824DAB25700300A4F /* SSLPining.swift in Sources */,
+				EE48CB1C24DAEDD000BD04E1 /* GoalService.swift in Sources */,
+				EE090F9D24DADA7E00300A4F /* Goal.swift in Sources */,
 				EE090F7924DAB54000300A4F /* HealthDataManager.swift in Sources */,
 				EE090F4924DAB25700300A4F /* SecuredNetworkService.swift in Sources */,
+				EE090FA324DADD8200300A4F /* ErrorHandling.swift in Sources */,
+				EED398CE24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */,
 				EE090F4A24DAB25700300A4F /* AppDelegate.swift in Sources */,
 				EE090F4B24DAB25700300A4F /* SceneDelegate.swift in Sources */,
 			);
@@ -806,12 +912,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE090F5B24DAB25F00300A4F /* ViewController.swift in Sources */,
+				EED398D624DAE7F000D0C0E7 /* GoalsViewController.swift in Sources */,
 				EE090F5C24DAB25F00300A4F /* NetwortService.swift in Sources */,
 				EE090F5D24DAB25F00300A4F /* SportsTracer.xcdatamodeld in Sources */,
+				EE090F9824DADA0200300A4F /* Settings.swift in Sources */,
+				EED398E624DAEB9900D0C0E7 /* HomeViewController.swift in Sources */,
 				EE090F5E24DAB25F00300A4F /* SSLPining.swift in Sources */,
+				EE48CB1B24DAEDCF00BD04E1 /* GoalService.swift in Sources */,
+				EE090F9E24DADA7E00300A4F /* Goal.swift in Sources */,
 				EE090F7A24DAB54000300A4F /* HealthDataManager.swift in Sources */,
 				EE090F5F24DAB25F00300A4F /* SecuredNetworkService.swift in Sources */,
+				EE090FA424DADD8200300A4F /* ErrorHandling.swift in Sources */,
+				EED398CF24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */,
 				EE090F6024DAB25F00300A4F /* AppDelegate.swift in Sources */,
 				EE090F6124DAB25F00300A4F /* SceneDelegate.swift in Sources */,
 			);
@@ -821,12 +933,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADF59D324D8171600BC147A /* ViewController.swift in Sources */,
 				FADF5A1024D823EF00BC147A /* NetwortService.swift in Sources */,
 				FADF59D924D8171600BC147A /* SportsTracer.xcdatamodeld in Sources */,
+				EE090F9524DADA0200300A4F /* Settings.swift in Sources */,
+				EED398E324DAEB9900D0C0E7 /* HomeViewController.swift in Sources */,
 				FADF5A0224D81CDA00BC147A /* SSLPining.swift in Sources */,
+				EE48CB1924DAEDCB00BD04E1 /* GoalService.swift in Sources */,
+				EE090F9B24DADA7E00300A4F /* Goal.swift in Sources */,
+				EE48CB1D24DAEDD900BD04E1 /* GoalsViewController.swift in Sources */,
 				EE090F7724DAB54000300A4F /* HealthDataManager.swift in Sources */,
 				FADF5A1224D8247300BC147A /* SecuredNetworkService.swift in Sources */,
+				EE090FA124DADD8200300A4F /* ErrorHandling.swift in Sources */,
+				EED398CC24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */,
 				FADF59CF24D8171600BC147A /* AppDelegate.swift in Sources */,
 				FADF59D124D8171600BC147A /* SceneDelegate.swift in Sources */,
 			);
@@ -868,7 +986,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FADF59D524D8171600BC147A /* Base */,
-				EE090F6F24DAB40B00300A4F /* zh-Hans */,
+				EED398E924DAEC8900D0C0E7 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

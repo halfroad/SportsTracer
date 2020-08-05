@@ -10,18 +10,17 @@ import UIKit
 import HealthKit
 
 class HealthDataManager: NSObject {
-
-    func acquire() {
+    
+    func acquireHealthData() {
         
-        let allTypes = Set([HKObjectType.workoutType(),
-                            HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!,
-                            HKObjectType.quantityType(forIdentifier: .distanceCycling)!,
-                            HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)!,
-                            HKObjectType.quantityType(forIdentifier: .heartRate)!])
-        let healthStore = HKHealthStore()
-        healthStore.requestAuthorization(toShare: allTypes, read: allTypes) { (success, error) in
-            if !success {
-                // Handle the error here.
+        if HKHealthStore.isHealthDataAvailable() {
+            
+            let allTypes = Set([HKObjectType.workoutType(), HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!, HKObjectType.quantityType(forIdentifier: .distanceCycling)!, HKObjectType.quantityType(forIdentifier: .distanceWalkingRunning)!, HKObjectType.quantityType(forIdentifier: .heartRate)!])
+            let healthStore = HKHealthStore()
+            healthStore.requestAuthorization(toShare: allTypes, read: allTypes) { (success, error) in
+                if !success {
+                    // Handle the error here.
+                }
             }
         }
     }

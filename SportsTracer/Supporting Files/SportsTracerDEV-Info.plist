@@ -6,6 +6,8 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>NSHealthUpdateUsageDescription</key>
 	<string>Please allow the app to synchronize the health data</string>
+	<key>NSHealthRequiredReadAuthorizationTypeIdentifiers</key>
+	<string>Please allow the app to use your clinical records</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>Please allow the app to use your health data</string>
 	<key>CFBundleExecutable</key>
