@@ -1,0 +1,1146 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C5A9DD46600E5FDF4F3FF5E045B2FDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		34DAC8EB0D78D229F1B2F088C865695D /* Pods-SportsTracer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60608BFF85332549F541C8F16D1F415F /* Pods-SportsTracer-dummy.m */; };
+		37CCE406D299AE340CB69CB271E10717 /* PKHUDAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D3E6EF37C82512A2487C4416765AD /* PKHUDAnimating.swift */; };
+		442C183E3045A0CD9819448C1D9F83DE /* PKHUDWideBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A37E8923181A603D3CAD41BC5A3D51 /* PKHUDWideBaseView.swift */; };
+		4458D4831EFF5B430517A417824B97C8 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8912969D2C8428B6CD7BAD7EB638E19 /* WindowRootViewController.swift */; };
+		45C06268B8C6970A182E5C1339FEDD78 /* PKHUDAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6D3F8E9CE385997B0F69AA329CA1E /* PKHUDAnimation.swift */; };
+		4860DECE333B6A4F1456BBF70086683B /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA36D6D1CB8F0FC2D581B101179919 /* HUD.swift */; };
+		4CCCFA4719450E471B7003DC3DF85105 /* Pods-SportsTracer-SportsTracerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C795C2325067CA0BF01A9E568E41C3 /* Pods-SportsTracer-SportsTracerUITests-dummy.m */; };
+		4FCB352472E7F19B3BDCE6AC2113F68D /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401962679DF6B20EF00A4A776007D8AB /* Window.swift */; };
+		631A46EFA978DB8FFD6C4F624D2B9EC2 /* Pods-SportsTracerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5215547B0CC2FCFD33064E39C4E6873D /* Pods-SportsTracerTests-dummy.m */; };
+		6A990568A1CEBF0E6CC5AA99BB4BBAA1 /* PKHUDResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */; };
+		6FA43D030B219F458A44D30B4130E38B /* PKHUDAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732595932573AE1D1FC011304A7E1FAA /* PKHUDAssets.swift */; };
+		6FE50D5E056EC4CBEEF355EF08AA1379 /* PKHUDTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB559DD39EA7BB5686ED820DA1BC13DD /* PKHUDTextView.swift */; };
+		702DE1CBD2D4A4CF3CFE4598C0DA499D /* PKHUDProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3236C297A8E3C7F3AFBA57798B13B0 /* PKHUDProgressView.swift */; };
+		7153031DE500788220C79F6BB6CF4718 /* PKHUDSquareBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A25EE694F2AE4D3CDB6CB41D6BEEC41 /* PKHUDSquareBaseView.swift */; };
+		7FA5EA7A6B4376FD556493FC4B45CA83 /* PKHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE4393B3072A3D765C6141C69A743F5 /* PKHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		890E86C5C133F7341CF5397D9B50368B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8BF45A41937C28F9FF51F29931B4AADF /* PKHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A1D534AFD829083091EE2D255AC57 /* PKHUD-dummy.m */; };
+		960E139C27E691FA3C10A3B78480683E /* Pods-SportsTracer-SportsTracerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7621740AD5D59F75FC2FAF2B5A44A56E /* Pods-SportsTracer-SportsTracerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC4A96F96AFCF327BA3F2E47104C37C /* PKHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 7383B3F17D69CCB34CECFC92C1524868 /* PKHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B41DDBE6556BC6F7411F22024B4A1BCB /* PKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028A4CAB51A70695B24674289390E2E9 /* PKHUD.swift */; };
+		BDE6C9F25C2E0DF16825FCB0257DDF08 /* Pods-SportsTracer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F373FE9811D62F263B00360C645A35 /* Pods-SportsTracer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C445335031CABCF234C80CED2939B8B8 /* PKHUDErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05AA3B068EC8E7DD1FE9AA8A8D42FDF /* PKHUDErrorView.swift */; };
+		C6062720640EBFC37D8372BFBAF6BC03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C67FEADA8378EEE41809420D9F6F696E /* PKHUDRotatingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B023F046A0E8BDFF85574CF580CBA1 /* PKHUDRotatingImageView.swift */; };
+		C9D65B4F291C1AF210A7B58194F8B06E /* PKHUDSystemActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6002C849A6467FFAA794FD6AA55E7AFE /* PKHUDSystemActivityIndicatorView.swift */; };
+		CA50B00222610BDFDF310B2DF8DCB5E4 /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CB803308CC5ADEDE192301A1F5B9D /* FrameView.swift */; };
+		D8E6A576D8A039DC02159E3A061E418E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E84C3581E67B0E4C722A1FEFB879888A /* Pods-SportsTracerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF5543182E359A4402ED58EBCA6124E0 /* Pods-SportsTracerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E97AC7BA800A0DFF5343DAC83D0AB539 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7714E713734B65F42E0097CD56F96454 /* Images.xcassets */; };
+		F6CB196C6C4ADAADA4F7594B43644BA1 /* PKHUDSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62B937C29D0BA786EAA40275A97FF7C /* PKHUDSuccessView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F1105EC8B0CCB6120471BB2ECAFF04C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7F7332F1050B42A501616421AC869EB;
+			remoteInfo = "PKHUD-PKHUDResources";
+		};
+		5032A54C49FAF0620639BC54CFB87EBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364873017BA37260EF589D44B6B73D21;
+			remoteInfo = PKHUD;
+		};
+		7F34064313BF2F6AEB5885252981B417 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B19741AA31C4457EE1E8DA8FFA005A6;
+			remoteInfo = "Pods-SportsTracer";
+		};
+		E2DA2881417BCDD75623AC1020C7D817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 364873017BA37260EF589D44B6B73D21;
+			remoteInfo = PKHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		028A4CAB51A70695B24674289390E2E9 /* PKHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUD.swift; path = PKHUD/PKHUD.swift; sourceTree = "<group>"; };
+		05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PKHUD.framework; path = PKHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C7A5CE7274B6F78F7630495BF91A33 /* Pods-SportsTracerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsTracerTests.release.xcconfig"; sourceTree = "<group>"; };
+		0CBFB071B1DCF6309C53D0460B8E26C8 /* Pods-SportsTracer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsTracer.debug.xcconfig"; sourceTree = "<group>"; };
+		16F373FE9811D62F263B00360C645A35 /* Pods-SportsTracer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportsTracer-umbrella.h"; sourceTree = "<group>"; };
+		1AD82404477993CF51A592BFB4BA0AB2 /* Pods_SportsTracer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportsTracer.framework; path = "Pods-SportsTracer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DFF4652943B767E9A0FBCEC39778DAC /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PKHUDResources-PKHUD-Info.plist"; sourceTree = "<group>"; };
+		278379D3A5B15C0F36A5360A29F7B9B1 /* Pods-SportsTracer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsTracer.release.xcconfig"; sourceTree = "<group>"; };
+		2CE4393B3072A3D765C6141C69A743F5 /* PKHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.debug.xcconfig; sourceTree = "<group>"; };
+		37E6304281F8224AD7411659F59CF191 /* Pods-SportsTracerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsTracerTests-Info.plist"; sourceTree = "<group>"; };
+		3D83BA9287D6681E0C00C1F01F72E0F9 /* Pods-SportsTracer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsTracer-frameworks.sh"; sourceTree = "<group>"; };
+		401962679DF6B20EF00A4A776007D8AB /* Window.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Window.swift; path = PKHUD/Window.swift; sourceTree = "<group>"; };
+		517A1D534AFD829083091EE2D255AC57 /* PKHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKHUD-dummy.m"; sourceTree = "<group>"; };
+		5215547B0CC2FCFD33064E39C4E6873D /* Pods-SportsTracerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportsTracerTests-dummy.m"; sourceTree = "<group>"; };
+		52D48ABE163447507C973A5C57C33A7B /* Pods_SportsTracerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportsTracerTests.framework; path = "Pods-SportsTracerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55EBDC951A432A834CCDC9A5F2F8B56D /* Pods-SportsTracer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsTracer-Info.plist"; sourceTree = "<group>"; };
+		5C47E637F7C33BCB244430DBEF224D03 /* Pods-SportsTracerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsTracerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5D1E16B0E5A78402812416BC35B4928A /* Pods_SportsTracer_SportsTracerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SportsTracer_SportsTracerUITests.framework; path = "Pods-SportsTracer-SportsTracerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6002C849A6467FFAA794FD6AA55E7AFE /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSystemActivityIndicatorView.swift; path = PKHUD/PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
+		60608BFF85332549F541C8F16D1F415F /* Pods-SportsTracer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportsTracer-dummy.m"; sourceTree = "<group>"; };
+		63B8CE32AA412DD9C983953D6B7AF1C2 /* Pods-SportsTracer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportsTracer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A25EE694F2AE4D3CDB6CB41D6BEEC41 /* PKHUDSquareBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSquareBaseView.swift; path = PKHUD/PKHUDSquareBaseView.swift; sourceTree = "<group>"; };
+		700DF4AE508B2B68C8C20514C51DE392 /* Pods-SportsTracerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsTracerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		732595932573AE1D1FC011304A7E1FAA /* PKHUDAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAssets.swift; path = PKHUD/PKHUDAssets.swift; sourceTree = "<group>"; };
+		7383B3F17D69CCB34CECFC92C1524868 /* PKHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PKHUD.h; path = PKHUD/PKHUD.h; sourceTree = "<group>"; };
+		7621740AD5D59F75FC2FAF2B5A44A56E /* Pods-SportsTracer-SportsTracerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportsTracer-SportsTracerUITests-umbrella.h"; sourceTree = "<group>"; };
+		7714E713734B65F42E0097CD56F96454 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PKHUD/Images.xcassets; sourceTree = "<group>"; };
+		7A0D3E6EF37C82512A2487C4416765AD /* PKHUDAnimating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimating.swift; path = PKHUD/PKHUDAnimating.swift; sourceTree = "<group>"; };
+		8088CFFDDEB880DA7E2C356FDE6481B9 /* Pods-SportsTracer-SportsTracerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SportsTracer-SportsTracerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		82A37E8923181A603D3CAD41BC5A3D51 /* PKHUDWideBaseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDWideBaseView.swift; path = PKHUD/PKHUDWideBaseView.swift; sourceTree = "<group>"; };
+		83C41658A3E138AF60C9CA9CCED9AF8C /* Pods-SportsTracer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportsTracer.modulemap"; sourceTree = "<group>"; };
+		8CC6D3F8E9CE385997B0F69AA329CA1E /* PKHUDAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAnimation.swift; path = PKHUD/PKHUDAnimation.swift; sourceTree = "<group>"; };
+		8F0B1262A1F1EE70650D96AEC4385921 /* Pods-SportsTracer-SportsTracerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsTracer-SportsTracerUITests-Info.plist"; sourceTree = "<group>"; };
+		9276464AE676AC2F03793E474C0EBDC9 /* Pods-SportsTracer-SportsTracerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsTracer-SportsTracerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		98DA36D6D1CB8F0FC2D581B101179919 /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = PKHUD/HUD.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A52CB803308CC5ADEDE192301A1F5B9D /* FrameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameView.swift; path = PKHUD/FrameView.swift; sourceTree = "<group>"; };
+		AA6A8201062443EC78BD13C2FFF26FB6 /* Pods-SportsTracer-SportsTracerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportsTracer-SportsTracerUITests.modulemap"; sourceTree = "<group>"; };
+		AD40A3E32AC22F368E7440A2B2C0C2B2 /* PKHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PKHUD.modulemap; sourceTree = "<group>"; };
+		BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PKHUDResources.bundle; path = "PKHUD-PKHUDResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45B7AF2FB96B893CA1AC8AD5ACF65F8 /* PKHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PKHUD-prefix.pch"; sourceTree = "<group>"; };
+		CB559DD39EA7BB5686ED820DA1BC13DD /* PKHUDTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDTextView.swift; path = PKHUD/PKHUDTextView.swift; sourceTree = "<group>"; };
+		CB8A51AE4286D251B3E9355167C82BE9 /* Pods-SportsTracer-SportsTracerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportsTracer-SportsTracerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1C6FE639E618D9AB04B3A3F74D04CEC /* Pods-SportsTracerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SportsTracerTests.modulemap"; sourceTree = "<group>"; };
+		D62B937C29D0BA786EAA40275A97FF7C /* PKHUDSuccessView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSuccessView.swift; path = PKHUD/PKHUDSuccessView.swift; sourceTree = "<group>"; };
+		D8912969D2C8428B6CD7BAD7EB638E19 /* WindowRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowRootViewController.swift; path = PKHUD/WindowRootViewController.swift; sourceTree = "<group>"; };
+		D8B023F046A0E8BDFF85574CF580CBA1 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDRotatingImageView.swift; path = PKHUD/PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
+		DC1BEF63F3C5D32F5588C7CB34408D95 /* Pods-SportsTracer-SportsTracerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SportsTracer-SportsTracerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E05AA3B068EC8E7DD1FE9AA8A8D42FDF /* PKHUDErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDErrorView.swift; path = PKHUD/PKHUDErrorView.swift; sourceTree = "<group>"; };
+		E3540BD2A1F3D49E494B4AE714A0A1A6 /* Pods-SportsTracer-SportsTracerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsTracer-SportsTracerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4C795C2325067CA0BF01A9E568E41C3 /* Pods-SportsTracer-SportsTracerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SportsTracer-SportsTracerUITests-dummy.m"; sourceTree = "<group>"; };
+		E61328C180CAD2A7D7802E7F452B62D1 /* Pods-SportsTracerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SportsTracerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ED553E7A02A0E402EF3D498BD3B71FE3 /* Pods-SportsTracer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SportsTracer-acknowledgements.plist"; sourceTree = "<group>"; };
+		F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.release.xcconfig; sourceTree = "<group>"; };
+		FD2A64C016418B9886B1297FD4CE7F4B /* PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PKHUD-Info.plist"; sourceTree = "<group>"; };
+		FD3236C297A8E3C7F3AFBA57798B13B0 /* PKHUDProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDProgressView.swift; path = PKHUD/PKHUDProgressView.swift; sourceTree = "<group>"; };
+		FF5543182E359A4402ED58EBCA6124E0 /* Pods-SportsTracerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SportsTracerTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B774D0B648C5C7E17B63065A7B199C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				890E86C5C133F7341CF5397D9B50368B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C61694BD9666890C77B9227C8514128 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5A9DD46600E5FDF4F3FF5E045B2FDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DC73663CD7E2A04D6BD7EA0D8175BD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3624B396794279BB953624DB1BBA0AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6062720640EBFC37D8372BFBAF6BC03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F05CAB6007498E043F4FAD3F9F2256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8E6A576D8A039DC02159E3A061E418E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01C0C33C929330165CE4FE24506F417C /* Pods-SportsTracer-SportsTracerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA6A8201062443EC78BD13C2FFF26FB6 /* Pods-SportsTracer-SportsTracerUITests.modulemap */,
+				CB8A51AE4286D251B3E9355167C82BE9 /* Pods-SportsTracer-SportsTracerUITests-acknowledgements.markdown */,
+				E3540BD2A1F3D49E494B4AE714A0A1A6 /* Pods-SportsTracer-SportsTracerUITests-acknowledgements.plist */,
+				E4C795C2325067CA0BF01A9E568E41C3 /* Pods-SportsTracer-SportsTracerUITests-dummy.m */,
+				8088CFFDDEB880DA7E2C356FDE6481B9 /* Pods-SportsTracer-SportsTracerUITests-frameworks.sh */,
+				8F0B1262A1F1EE70650D96AEC4385921 /* Pods-SportsTracer-SportsTracerUITests-Info.plist */,
+				7621740AD5D59F75FC2FAF2B5A44A56E /* Pods-SportsTracer-SportsTracerUITests-umbrella.h */,
+				DC1BEF63F3C5D32F5588C7CB34408D95 /* Pods-SportsTracer-SportsTracerUITests.debug.xcconfig */,
+				9276464AE676AC2F03793E474C0EBDC9 /* Pods-SportsTracer-SportsTracerUITests.release.xcconfig */,
+			);
+			name = "Pods-SportsTracer-SportsTracerUITests";
+			path = "Target Support Files/Pods-SportsTracer-SportsTracerUITests";
+			sourceTree = "<group>";
+		};
+		04ABCDDE2648A1C775D487595DB8D7EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8E0FA0EE3A771117717F2D769CF52D9 /* PKHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40D25CADE164C2AEC3D471D05DD3B6A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7714E713734B65F42E0097CD56F96454 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		42BD8A1A7BDBD0E1C350BAB893D7B440 /* Pods-SportsTracerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1C6FE639E618D9AB04B3A3F74D04CEC /* Pods-SportsTracerTests.modulemap */,
+				E61328C180CAD2A7D7802E7F452B62D1 /* Pods-SportsTracerTests-acknowledgements.markdown */,
+				5C47E637F7C33BCB244430DBEF224D03 /* Pods-SportsTracerTests-acknowledgements.plist */,
+				5215547B0CC2FCFD33064E39C4E6873D /* Pods-SportsTracerTests-dummy.m */,
+				37E6304281F8224AD7411659F59CF191 /* Pods-SportsTracerTests-Info.plist */,
+				FF5543182E359A4402ED58EBCA6124E0 /* Pods-SportsTracerTests-umbrella.h */,
+				700DF4AE508B2B68C8C20514C51DE392 /* Pods-SportsTracerTests.debug.xcconfig */,
+				08C7A5CE7274B6F78F7630495BF91A33 /* Pods-SportsTracerTests.release.xcconfig */,
+			);
+			name = "Pods-SportsTracerTests";
+			path = "Target Support Files/Pods-SportsTracerTests";
+			sourceTree = "<group>";
+		};
+		598841EFE227966CA8E9BBDE6FC3A199 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD40A3E32AC22F368E7440A2B2C0C2B2 /* PKHUD.modulemap */,
+				517A1D534AFD829083091EE2D255AC57 /* PKHUD-dummy.m */,
+				FD2A64C016418B9886B1297FD4CE7F4B /* PKHUD-Info.plist */,
+				C45B7AF2FB96B893CA1AC8AD5ACF65F8 /* PKHUD-prefix.pch */,
+				2CE4393B3072A3D765C6141C69A743F5 /* PKHUD-umbrella.h */,
+				35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */,
+				F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */,
+				1DFF4652943B767E9A0FBCEC39778DAC /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PKHUD";
+			sourceTree = "<group>";
+		};
+		BCABED4283F1D85104A3028194E45C83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */,
+				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */,
+				1AD82404477993CF51A592BFB4BA0AB2 /* Pods_SportsTracer.framework */,
+				5D1E16B0E5A78402812416BC35B4928A /* Pods_SportsTracer_SportsTracerUITests.framework */,
+				52D48ABE163447507C973A5C57C33A7B /* Pods_SportsTracerTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C8E0FA0EE3A771117717F2D769CF52D9 /* PKHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A52CB803308CC5ADEDE192301A1F5B9D /* FrameView.swift */,
+				98DA36D6D1CB8F0FC2D581B101179919 /* HUD.swift */,
+				7383B3F17D69CCB34CECFC92C1524868 /* PKHUD.h */,
+				028A4CAB51A70695B24674289390E2E9 /* PKHUD.swift */,
+				7A0D3E6EF37C82512A2487C4416765AD /* PKHUDAnimating.swift */,
+				8CC6D3F8E9CE385997B0F69AA329CA1E /* PKHUDAnimation.swift */,
+				732595932573AE1D1FC011304A7E1FAA /* PKHUDAssets.swift */,
+				E05AA3B068EC8E7DD1FE9AA8A8D42FDF /* PKHUDErrorView.swift */,
+				FD3236C297A8E3C7F3AFBA57798B13B0 /* PKHUDProgressView.swift */,
+				D8B023F046A0E8BDFF85574CF580CBA1 /* PKHUDRotatingImageView.swift */,
+				6A25EE694F2AE4D3CDB6CB41D6BEEC41 /* PKHUDSquareBaseView.swift */,
+				D62B937C29D0BA786EAA40275A97FF7C /* PKHUDSuccessView.swift */,
+				6002C849A6467FFAA794FD6AA55E7AFE /* PKHUDSystemActivityIndicatorView.swift */,
+				CB559DD39EA7BB5686ED820DA1BC13DD /* PKHUDTextView.swift */,
+				82A37E8923181A603D3CAD41BC5A3D51 /* PKHUDWideBaseView.swift */,
+				401962679DF6B20EF00A4A776007D8AB /* Window.swift */,
+				D8912969D2C8428B6CD7BAD7EB638E19 /* WindowRootViewController.swift */,
+				40D25CADE164C2AEC3D471D05DD3B6A6 /* Resources */,
+				598841EFE227966CA8E9BBDE6FC3A199 /* Support Files */,
+			);
+			name = PKHUD;
+			path = PKHUD;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				04ABCDDE2648A1C775D487595DB8D7EC /* Pods */,
+				BCABED4283F1D85104A3028194E45C83 /* Products */,
+				ECC3AF587B088F1853C14CEC83DFF597 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8F2FC64AEBC41EBEB2B62A9EA735F5E /* Pods-SportsTracer */ = {
+			isa = PBXGroup;
+			children = (
+				83C41658A3E138AF60C9CA9CCED9AF8C /* Pods-SportsTracer.modulemap */,
+				63B8CE32AA412DD9C983953D6B7AF1C2 /* Pods-SportsTracer-acknowledgements.markdown */,
+				ED553E7A02A0E402EF3D498BD3B71FE3 /* Pods-SportsTracer-acknowledgements.plist */,
+				60608BFF85332549F541C8F16D1F415F /* Pods-SportsTracer-dummy.m */,
+				3D83BA9287D6681E0C00C1F01F72E0F9 /* Pods-SportsTracer-frameworks.sh */,
+				55EBDC951A432A834CCDC9A5F2F8B56D /* Pods-SportsTracer-Info.plist */,
+				16F373FE9811D62F263B00360C645A35 /* Pods-SportsTracer-umbrella.h */,
+				0CBFB071B1DCF6309C53D0460B8E26C8 /* Pods-SportsTracer.debug.xcconfig */,
+				278379D3A5B15C0F36A5360A29F7B9B1 /* Pods-SportsTracer.release.xcconfig */,
+			);
+			name = "Pods-SportsTracer";
+			path = "Target Support Files/Pods-SportsTracer";
+			sourceTree = "<group>";
+		};
+		ECC3AF587B088F1853C14CEC83DFF597 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2FC64AEBC41EBEB2B62A9EA735F5E /* Pods-SportsTracer */,
+				01C0C33C929330165CE4FE24506F417C /* Pods-SportsTracer-SportsTracerUITests */,
+				42BD8A1A7BDBD0E1C350BAB893D7B440 /* Pods-SportsTracerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0ED5F83F9E8D5ED0206CC25474A1CC8C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84C3581E67B0E4C722A1FEFB879888A /* Pods-SportsTracerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B99CA8C15AB23540A98CAA833DD74B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960E139C27E691FA3C10A3B78480683E /* Pods-SportsTracer-SportsTracerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BDCF795AEA3A5B2C49142A58AA2F5A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDE6C9F25C2E0DF16825FCB0257DDF08 /* Pods-SportsTracer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77FE06C24F3D9A30969AF6292046EA64 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA5EA7A6B4376FD556493FC4B45CA83 /* PKHUD-umbrella.h in Headers */,
+				AAC4A96F96AFCF327BA3F2E47104C37C /* PKHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0E95E185B3876F367AC5FBBE42B33DFC /* Pods-SportsTracer-SportsTracerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889B715D59206869F986ABC817B0711D /* Build configuration list for PBXNativeTarget "Pods-SportsTracer-SportsTracerUITests" */;
+			buildPhases = (
+				3B99CA8C15AB23540A98CAA833DD74B0 /* Headers */,
+				4408275AF24D153E4EC42EB3D7B47592 /* Sources */,
+				3624B396794279BB953624DB1BBA0AB5 /* Frameworks */,
+				1B8E7E527E0425156B0B7E4822E01B14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB78394A75DEA2D0AAC9AE97CBF86B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportsTracer-SportsTracerUITests";
+			productName = "Pods-SportsTracer-SportsTracerUITests";
+			productReference = 5D1E16B0E5A78402812416BC35B4928A /* Pods_SportsTracer_SportsTracerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		364873017BA37260EF589D44B6B73D21 /* PKHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B0B7FC0B15E409AF42F9E04D7F90FE9 /* Build configuration list for PBXNativeTarget "PKHUD" */;
+			buildPhases = (
+				77FE06C24F3D9A30969AF6292046EA64 /* Headers */,
+				CAA693190E7E902B5A46F8B6A4723E98 /* Sources */,
+				0B774D0B648C5C7E17B63065A7B199C0 /* Frameworks */,
+				4654AD7D19C51A7EF7138982B5AC53B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D85D0EE9EB020CE874385F5C0C2D5B31 /* PBXTargetDependency */,
+			);
+			name = PKHUD;
+			productName = PKHUD;
+			productReference = 05A2656F46E8CA87E77A035911B33D10 /* PKHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		42AC8A1FF447D3BC47FDD010AE034D2A /* Pods-SportsTracerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CB72E31E87CD06B400C3E4A1B74B24E /* Build configuration list for PBXNativeTarget "Pods-SportsTracerTests" */;
+			buildPhases = (
+				0ED5F83F9E8D5ED0206CC25474A1CC8C /* Headers */,
+				7EF4CCF44B032F0598393890CD29FA66 /* Sources */,
+				58F05CAB6007498E043F4FAD3F9F2256 /* Frameworks */,
+				5BA968EE06ED6B0C13B3EB06B6AA469B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0A22ABDE6F4ED6C52E880A8E1D37494 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportsTracerTests";
+			productName = "Pods-SportsTracerTests";
+			productReference = 52D48ABE163447507C973A5C57C33A7B /* Pods_SportsTracerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B19741AA31C4457EE1E8DA8FFA005A6 /* Pods-SportsTracer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12FE6782DF53DC7CDEAF6450486FB15 /* Build configuration list for PBXNativeTarget "Pods-SportsTracer" */;
+			buildPhases = (
+				3BDCF795AEA3A5B2C49142A58AA2F5A5 /* Headers */,
+				D8A3BDD0660D6761770368C11FD98258 /* Sources */,
+				1C61694BD9666890C77B9227C8514128 /* Frameworks */,
+				67FC1BBB7661B8B0AC8D9ED84D843BA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7C6D484F03CF3913EB49C25366EDDD8 /* PBXTargetDependency */,
+			);
+			name = "Pods-SportsTracer";
+			productName = "Pods-SportsTracer";
+			productReference = 1AD82404477993CF51A592BFB4BA0AB2 /* Pods_SportsTracer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B54C9BD699C138068CB81B8DF9485F /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */;
+			buildPhases = (
+				82BE878F764B0BC5C491EE02A4879DFB /* Sources */,
+				2DC73663CD7E2A04D6BD7EA0D8175BD6 /* Frameworks */,
+				25DE0D6AB181E40DBFF879D454992B9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PKHUD-PKHUDResources";
+			productName = "PKHUD-PKHUDResources";
+			productReference = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUDResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BCABED4283F1D85104A3028194E45C83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				364873017BA37260EF589D44B6B73D21 /* PKHUD */,
+				A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */,
+				6B19741AA31C4457EE1E8DA8FFA005A6 /* Pods-SportsTracer */,
+				0E95E185B3876F367AC5FBBE42B33DFC /* Pods-SportsTracer-SportsTracerUITests */,
+				42AC8A1FF447D3BC47FDD010AE034D2A /* Pods-SportsTracerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B8E7E527E0425156B0B7E4822E01B14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DE0D6AB181E40DBFF879D454992B9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E97AC7BA800A0DFF5343DAC83D0AB539 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4654AD7D19C51A7EF7138982B5AC53B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A990568A1CEBF0E6CC5AA99BB4BBAA1 /* PKHUDResources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BA968EE06ED6B0C13B3EB06B6AA469B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67FC1BBB7661B8B0AC8D9ED84D843BA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4408275AF24D153E4EC42EB3D7B47592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CCCFA4719450E471B7003DC3DF85105 /* Pods-SportsTracer-SportsTracerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF4CCF44B032F0598393890CD29FA66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				631A46EFA978DB8FFD6C4F624D2B9EC2 /* Pods-SportsTracerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82BE878F764B0BC5C491EE02A4879DFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAA693190E7E902B5A46F8B6A4723E98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA50B00222610BDFDF310B2DF8DCB5E4 /* FrameView.swift in Sources */,
+				4860DECE333B6A4F1456BBF70086683B /* HUD.swift in Sources */,
+				8BF45A41937C28F9FF51F29931B4AADF /* PKHUD-dummy.m in Sources */,
+				B41DDBE6556BC6F7411F22024B4A1BCB /* PKHUD.swift in Sources */,
+				37CCE406D299AE340CB69CB271E10717 /* PKHUDAnimating.swift in Sources */,
+				45C06268B8C6970A182E5C1339FEDD78 /* PKHUDAnimation.swift in Sources */,
+				6FA43D030B219F458A44D30B4130E38B /* PKHUDAssets.swift in Sources */,
+				C445335031CABCF234C80CED2939B8B8 /* PKHUDErrorView.swift in Sources */,
+				702DE1CBD2D4A4CF3CFE4598C0DA499D /* PKHUDProgressView.swift in Sources */,
+				C67FEADA8378EEE41809420D9F6F696E /* PKHUDRotatingImageView.swift in Sources */,
+				7153031DE500788220C79F6BB6CF4718 /* PKHUDSquareBaseView.swift in Sources */,
+				F6CB196C6C4ADAADA4F7594B43644BA1 /* PKHUDSuccessView.swift in Sources */,
+				C9D65B4F291C1AF210A7B58194F8B06E /* PKHUDSystemActivityIndicatorView.swift in Sources */,
+				6FE50D5E056EC4CBEEF355EF08AA1379 /* PKHUDTextView.swift in Sources */,
+				442C183E3045A0CD9819448C1D9F83DE /* PKHUDWideBaseView.swift in Sources */,
+				4FCB352472E7F19B3BDCE6AC2113F68D /* Window.swift in Sources */,
+				4458D4831EFF5B430517A417824B97C8 /* WindowRootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A3BDD0660D6761770368C11FD98258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34DAC8EB0D78D229F1B2F088C865695D /* Pods-SportsTracer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB78394A75DEA2D0AAC9AE97CBF86B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PKHUD;
+			target = 364873017BA37260EF589D44B6B73D21 /* PKHUD */;
+			targetProxy = 5032A54C49FAF0620639BC54CFB87EBB /* PBXContainerItemProxy */;
+		};
+		D0A22ABDE6F4ED6C52E880A8E1D37494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SportsTracer";
+			target = 6B19741AA31C4457EE1E8DA8FFA005A6 /* Pods-SportsTracer */;
+			targetProxy = 7F34064313BF2F6AEB5885252981B417 /* PBXContainerItemProxy */;
+		};
+		D7C6D484F03CF3913EB49C25366EDDD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PKHUD;
+			target = 364873017BA37260EF589D44B6B73D21 /* PKHUD */;
+			targetProxy = E2DA2881417BCDD75623AC1020C7D817 /* PBXContainerItemProxy */;
+		};
+		D85D0EE9EB020CE874385F5C0C2D5B31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PKHUD-PKHUDResources";
+			target = A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */;
+			targetProxy = 1F1105EC8B0CCB6120471BB2ECAFF04C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E3888011571E4C368F6D3CAB2F585CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 700DF4AE508B2B68C8C20514C51DE392 /* Pods-SportsTracerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsTracerTests/Pods-SportsTracerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsTracerTests/Pods-SportsTracerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		11F3C8E1F0290861A3823D774392B5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9276464AE676AC2F03793E474C0EBDC9 /* Pods-SportsTracer-SportsTracerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsTracer-SportsTracerUITests/Pods-SportsTracer-SportsTracerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsTracer-SportsTracerUITests/Pods-SportsTracer-SportsTracerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		33A50D6A1BBE4BC803875477B5917299 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1BEF63F3C5D32F5588C7CB34408D95 /* Pods-SportsTracer-SportsTracerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsTracer-SportsTracerUITests/Pods-SportsTracer-SportsTracerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsTracer-SportsTracerUITests/Pods-SportsTracer-SportsTracerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		871B6E28ABA34DAE69824AB9D22D3B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A3F2E41913906A54DD5F94C8E1632A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C7A5CE7274B6F78F7630495BF91A33 /* Pods-SportsTracerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsTracerTests/Pods-SportsTracerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsTracerTests/Pods-SportsTracerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E15A109612D8E06E6645AEB98E19CEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				IBSC_MODULE = PKHUD;
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PKHUDResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E594B7F26B55C99385B14E3B9F1D1D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CBFB071B1DCF6309C53D0460B8E26C8 /* Pods-SportsTracer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsTracer/Pods-SportsTracer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsTracer/Pods-SportsTracer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7BEFAAEFAE29FF0C0C2064055BCF910 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				IBSC_MODULE = PKHUD;
+				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PKHUDResources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F136064D507ECD8F3FA15AEA6F9A26C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A555794666D54F4B54BA4C33C3274F /* PKHUD.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F74FDAFD06F3584CAF6BA0C8536608D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 278379D3A5B15C0F36A5360A29F7B9B1 /* Pods-SportsTracer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SportsTracer/Pods-SportsTracer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SportsTracer/Pods-SportsTracer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAE32BEB58959935A7DC54F6DC9D2B4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DF016AA823B5275AA8488F2C07D267 /* PKHUD.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
+				PRODUCT_MODULE_NAME = PKHUD;
+				PRODUCT_NAME = PKHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B0B7FC0B15E409AF42F9E04D7F90FE9 /* Build configuration list for PBXNativeTarget "PKHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE32BEB58959935A7DC54F6DC9D2B4B /* Debug */,
+				F136064D507ECD8F3FA15AEA6F9A26C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CB72E31E87CD06B400C3E4A1B74B24E /* Build configuration list for PBXNativeTarget "Pods-SportsTracerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3888011571E4C368F6D3CAB2F585CD /* Debug */,
+				A3F2E41913906A54DD5F94C8E1632A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */,
+				871B6E28ABA34DAE69824AB9D22D3B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		889B715D59206869F986ABC817B0711D /* Build configuration list for PBXNativeTarget "Pods-SportsTracer-SportsTracerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33A50D6A1BBE4BC803875477B5917299 /* Debug */,
+				11F3C8E1F0290861A3823D774392B5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B54C9BD699C138068CB81B8DF9485F /* Build configuration list for PBXNativeTarget "PKHUD-PKHUDResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E15A109612D8E06E6645AEB98E19CEEC /* Debug */,
+				E7BEFAAEFAE29FF0C0C2064055BCF910 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D12FE6782DF53DC7CDEAF6450486FB15 /* Build configuration list for PBXNativeTarget "Pods-SportsTracer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E594B7F26B55C99385B14E3B9F1D1D89 /* Debug */,
+				F74FDAFD06F3584CAF6BA0C8536608D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_SportsTracer_SportsTracerUITests {
+  umbrella header "Pods-SportsTracer-SportsTracerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
