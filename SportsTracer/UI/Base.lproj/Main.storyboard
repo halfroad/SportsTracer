@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-2086" y="306"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Eyx-jc-GWF">
             <objects>
-                <tableViewController id="SKg-eC-FCl" sceneMemberID="viewController">
+                <tableViewController id="SKg-eC-FCl" customClass="HomeViewController" customModule="SportsTracerDEV" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="smV-ni-yYZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,11 +55,11 @@
             </objects>
             <point key="canvasLocation" x="-407.24637681159425" y="-77.008928571428569"/>
         </scene>
-        <!--Goals View Controller-->
+        <!--Goals-->
         <scene sceneID="zzs-t9-trx">
             <objects>
                 <tableViewController id="W7I-D9-Nnt" customClass="GoalsViewController" customModule="SportsTracerDEV" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0lt-ye-7h0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0lt-ye-7h0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -78,7 +78,7 @@
                             <outlet property="delegate" destination="W7I-D9-Nnt" id="EIG-sw-W1G"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="oO7-gr-gqk"/>
+                    <navigationItem key="navigationItem" title="Goals" id="oO7-gr-gqk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NGI-1E-7w7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="-1152" y="654"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="r4u-5l-4iK">
             <objects>
                 <tableViewController id="MPE-rS-o7C" customClass="SettingsViewController" customModule="SportsTracerDEV" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                             <outlet property="delegate" destination="MPE-rS-o7C" id="YAp-Oy-R1G"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="L0G-0M-Mcr"/>
+                    <navigationItem key="navigationItem" title="Settings" id="L0G-0M-Mcr"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qz-UE-H7D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,8 +138,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tMW-C3-sb4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="kRf-QU-dUn"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YQo-U6-sAL">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="YQo-U6-sAL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -157,8 +157,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="adB-Wu-uLC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="AJ6-H7-i1k"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EPc-t8-tdS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="EPc-t8-tdS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -16,7 +16,7 @@ struct GoalsPayload: Decodable {
         case items // The top level "items" key
     }
     
-    init(from decoder:Decoder) throws {
+    init(from decoder: Decoder) throws {
         
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -26,6 +26,10 @@ struct GoalsPayload: Decodable {
 
 struct Goal: Decodable {
     
+    var id: String? = "-1"
+    var title: String? = ""
+    var description: String? = ""
+    
     enum Types: String, CodingKey {
         case unknown = "unknown"
         case step = "step"
@@ -33,6 +37,9 @@ struct Goal: Decodable {
         case runningDistance = "running_distance"
         case zombieHand = "zombie_hand"
     }
+    
+    var type: Types? = .unknown
+    var goal: Int? = -1
     
     struct Reward: Decodable {
         
@@ -44,14 +51,16 @@ struct Goal: Decodable {
             case zombieHand = "zombie_hand"
         }
         
-        var trophy: Trophies = .unknown
-        var points: Int = 0
+        var trophy: Trophies? = .unknown
+        var points: Int? = 0
         
         enum CodingKeys: String, CodingKey {
             case trophy, points
         }
         
         init() {
+            trophy = .unknown
+            points = -1
         }
         
         init(from decoder: Decoder) throws {
@@ -63,11 +72,6 @@ struct Goal: Decodable {
         }
     }
     
-    var id: String = "-1"
-    var title: String = ""
-    var description: String = ""
-    var type: Types = .unknown
-    var goal: String = ""
     var reward = Reward()
     
     enum CodingKeys: String, CodingKey {
@@ -82,7 +86,7 @@ struct Goal: Decodable {
         title = try values.decode(String.self, forKey: .title)
         description = try values.decode(String.self, forKey: .description)
         type = Goal.Types(rawValue: try values.decode(String.self, forKey: .type)) ?? .unknown
-        goal = try values.decode(String.self, forKey: .goal)
+        goal = try values.decode(Int.self, forKey: .goal)
         reward = try values.decode(Reward.self, forKey: .reward)
     }
 }

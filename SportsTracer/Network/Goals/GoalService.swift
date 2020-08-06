@@ -18,6 +18,7 @@ class GoalService: SecuredNetworkService {
         
         if let url = URL (string: Settings.Host + GoalService.AcquireGoalsEndpoint) {
             
+            // Suppose the API is authenticated by Token.
             super.request(url: url, (key: "AccessToken", value: UUID().uuidString)) { (data, urlResponse, error) in
                 
                 if let httpURLResponse = urlResponse as? HTTPURLResponse, let data = data {

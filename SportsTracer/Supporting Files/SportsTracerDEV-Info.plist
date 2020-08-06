@@ -4,12 +4,6 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>Please allow the app to synchronize the health data</string>
-	<key>NSHealthRequiredReadAuthorizationTypeIdentifiers</key>
-	<string>Please allow the app to use your clinical records</string>
-	<key>NSHealthShareUsageDescription</key>
-	<string>Please allow the app to use your health data</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>The app would like to write simulated heart data to HealthKit</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>The app would like to read simulated heart rate data from HealthKit</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -66,5 +64,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>com.apple.developer.healthkit</key>
+	<true/>
+	<key>com.apple.developer.healthkit.access</key>
+	<array/>
 </dict>
 </plist>

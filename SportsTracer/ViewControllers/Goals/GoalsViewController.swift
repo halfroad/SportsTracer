@@ -20,22 +20,78 @@ class GoalsViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        let goalService = GoalService()
+        //https://developer.apple.com/documentation/healthkit/setting_up_healthkit
         
-        HUD.show(.progress)
+        let refreshControl = UIRefreshControl()
         
-        goalService.acquireGoals("Jinhui") { (result, goals, error) in
-            
-            HUD.hide()
-            
-            if result {
-                
-            } else {
-                HUD.flash(.labeledError(title: error?.localizedDescription, subtitle: nil))
+        refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("Pull to refresh your goals", comment: "Pull to refresh your goals"))
+        refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        
+        self.tableView.refreshControl = refreshControl
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        autoRefresh()
+    }
+}
+
+// Event handlers
+
+extension GoalsViewController {
+    
+    func autoRefresh() {
+        
+        if let refreshControl = self.tableView.refreshControl {
+            if !refreshControl.isRefreshing {
+                refreshControl.autoBeginRefreshing(in: self.tableView)
             }
         }
     }
+    
+    @objc func handleRefresh(sender: UIRefreshControl) {
+        
+        if sender.isRefreshing {
+            sender.attributedTitle = NSAttributedString(string: NSLocalizedString("Synchronising your goals", comment: "Synchronising your goals"))
+            self.acquiredGoals(sender)
+        }
+    }
+}
 
+extension GoalsViewController {
+    
+    func acquiredCachedGoals() -> Void {
+    }
+    
+    func acquiredGoals(_ refreshControl: UIRefreshControl? = nil) -> Void {
+        
+        let goalService = GoalService()
+        
+        goalService.acquireGoals("Jinhui") { [weak refreshControl] (result, goals, error) in
+            
+            if result {
+                
+                if let data = try? NSKeyedArchiver.archivedData(withRootObject: goals, requiringSecureCoding: true) {
+                    
+                    print(data)
+                }
+                
+            } else {
+                HUD.flash(.labeledError(title: error?.localizedDescription, subtitle: nil), delay: 3.0)
+            }
+            
+            if let refreshControl = refreshControl {
+                refreshControl.endRefreshing()
+                refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("Pull to refresh your goals", comment: "Pull to refresh your goals"))
+            }
+        }
+    }
+}
+
+extension GoalsViewController {
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -74,7 +130,7 @@ class GoalsViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -102,5 +158,4 @@ class GoalsViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
