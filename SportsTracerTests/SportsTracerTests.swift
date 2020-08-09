@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SportsTracer
+@testable import SportsTracerDEV
 
 class SportsTracerTests: XCTestCase {
 
@@ -22,6 +22,11 @@ class SportsTracerTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        HealthDataManager.shared.acquireHealthRecords { (records) in
+            
+            assert(records.count >= 0)
+        }
     }
 
     func testPerformanceExample() throws {

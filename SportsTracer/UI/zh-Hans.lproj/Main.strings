@@ -1,9 +1,48 @@
 
-/* Class = "UITabBarItem"; title = "Home"; ObjectID = "AJ6-H7-i1k"; */
-"AJ6-H7-i1k.title" = "首页";
+/* Class = "UILabel"; text = "325"; ObjectID = "8BU-IF-TR2"; */
+"8BU-IF-TR2.text" = "325";
 
-/* Class = "UITabBarItem"; title = "Goals"; ObjectID = "zov-uV-Jjc"; */
-"zov-uV-Jjc.title" = "目标";
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "AJ6-H7-i1k"; */
+"AJ6-H7-i1k.title" = "概览";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "H7L-Gc-9sb"; */
+"H7L-Gc-9sb.text" = "步";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "HoP-cO-TOt"; */
+"HoP-cO-TOt.text" = "10";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "L0G-0M-Mcr"; */
+"L0G-0M-Mcr.title" = "设置";
+
+/* Class = "UILabel"; text = "Easy walk steps"; ObjectID = "OrL-g5-eh3"; */
+"OrL-g5-eh3.text" = "Easy walk steps";
+
+/* Class = "UINavigationItem"; title = "Today Summary"; ObjectID = "TgL-ue-85S"; */
+"TgL-ue-85S.title" = "今日概览";
+
+/* Class = "UILabel"; text = "325"; ObjectID = "h6f-o6-eeg"; */
+"h6f-o6-eeg.text" = "325";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "i5A-fH-je2"; */
+"i5A-fH-je2.text" = "步";
 
 /* Class = "UITabBarItem"; title = "Settings"; ObjectID = "kRf-QU-dUn"; */
 "kRf-QU-dUn.title" = "设置";
+
+/* Class = "UINavigationItem"; title = "Goals"; ObjectID = "oO7-gr-gqk"; */
+"oO7-gr-gqk.title" = "目标";
+
+/* Class = "UILabel"; text = "Walk 500 steps a day"; ObjectID = "snV-X8-Wxg"; */
+"snV-X8-Wxg.text" = "Walk 500 steps a day";
+
+/* Class = "UILabel"; text = "1000"; ObjectID = "vCW-wb-N7v"; */
+"vCW-wb-N7v.text" = "1000";
+
+/* Class = "UILabel"; text = "15:51"; ObjectID = "x1z-Mm-pT2"; */
+"x1z-Mm-pT2.text" = "15:51";
+
+/* Class = "UILabel"; text = "15:51"; ObjectID = "xTT-yp-KYy"; */
+"xTT-yp-KYy.text" = "15:51";
+
+/* Class = "UITabBarItem"; title = "Goals"; ObjectID = "zov-uV-Jjc"; */
+"zov-uV-Jjc.title" = "目标";

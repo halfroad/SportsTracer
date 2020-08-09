@@ -34,12 +34,11 @@ class HealthRecordTableViewCell: UITableViewCell {
         
         let value = Int(value)
         
-        let valueAttributedString = NSMutableAttributedString(string: "\(value) ", attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .largeTitle)])
+        let valueAttributedString = NSMutableAttributedString(string: "\(value) ", attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title1)])
         let unitAttributedString = NSMutableAttributedString(string: unit, attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body), NSAttributedString.Key.foregroundColor: UIColor.systemGray])
         
         valueAttributedString.append(unitAttributedString)
         
         self.valueLabel.attributedText = valueAttributedString
     }
-
 }

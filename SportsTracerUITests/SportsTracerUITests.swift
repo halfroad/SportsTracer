@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import SportsTracerDEV
 
 class SportsTracerUITests: XCTestCase {
 

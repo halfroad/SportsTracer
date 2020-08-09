@@ -21,9 +21,9 @@ class HealthDataManager: NSObject {
         healthStore = HKHealthStore()
     }
     
-    func acquireHealthRecords(_ completionHandler: @escaping([(name: String, icon: String, value: Double, unit: String, lastTime: Date)]) -> Void) -> Void {
+    func acquireHealthRecords(_ completionHandler: @escaping([(name: String, type: Goal.Types, icon: String, value: Double, unit: String, lastTime: Date)]) -> Void) -> Void {
         
-        var records = [(name: String, icon: String, value: Double, unit: String, lastTime: Date)]()
+        var records = [(name: String, type: Goal.Types, icon: String, value: Double, unit: String, lastTime: Date)]()
         
         let dispatchQueue = DispatchQueue.global()
         let dispatchGroup = DispatchGroup()
@@ -35,7 +35,7 @@ class HealthDataManager: NSObject {
             
             self?.querySteps { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
 
-                let item = (name: NSLocalizedString("Number of Steps", comment: "Number of Steps"), icon: "Walking", value: recordWrittenByMobilePhone, unit: NSLocalizedString("steps", comment: "steps"), lastTime)
+                let item = (name: NSLocalizedString("Number of Steps", comment: "Number of Steps"), type: Goal.Types.step, icon: "Walking", value: recordWrittenByMobilePhone, unit: NSLocalizedString("steps", comment: "steps"), lastTime)
                 
                 records.append(item)
                 
@@ -49,7 +49,7 @@ class HealthDataManager: NSObject {
             
             self?.queryDistanceWalkingRunnings { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
 
-                let item = (name: NSLocalizedString("Walk + Runing Distance", comment: "Walk + Runing Distance"), icon: "Running", value: recordWrittenByMobilePhone, unit.unitString, lastTime)
+                let item = (name: NSLocalizedString("Walking + Runing Distance", comment: "Walking + Runing Distance"), Goal.Types.walkingDistance, icon: "Running", value: recordWrittenByMobilePhone, unit.unitString, lastTime)
                 
                 records.append(item)
                 
@@ -63,7 +63,7 @@ class HealthDataManager: NSObject {
             
             self?.queryHeartRate { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
 
-                let item = (name: NSLocalizedString("Heart Rate", comment: "Heart Rate"), icon: "Heartbeat", value: recordWrittenByMobilePhone, unit: NSLocalizedString("BPM", comment: "BPM"), lastTime)
+                let item = (name: NSLocalizedString("Heart Rate", comment: "Heart Rate"), Goal.Types.unknown, icon: "Heartbeat", value: recordWrittenByMobilePhone, unit: NSLocalizedString("BPM", comment: "BPM"), lastTime)
                 
                 records.append(item)
                 dispatchSemaphore.signal()

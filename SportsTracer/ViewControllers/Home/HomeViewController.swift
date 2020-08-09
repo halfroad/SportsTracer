@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UITableViewController {
 
-    var healthRecords = [(name: String, icon: String, value: Double, unit: String, lastTime: Date)]()
+    var healthRecords = [(name: String, type: Goal.Types, icon: String, value: Double, unit: String, lastTime: Date)]()
 
     override func viewDidLoad() {
         super.viewDidLoad()

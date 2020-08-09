@@ -12,6 +12,7 @@ import PKHUD
 class GoalsViewController: UITableViewController {
 
     var goals = [Goal]()
+    var healthRecords = [(name: String, type: Goal.Types, icon: String, value: Double, unit: String, lastTime: Date)]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,16 @@ class GoalsViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
+        
+        HealthDataManager.shared.acquireHealthRecords { [weak self] (healthRecords) in
+            
+            self?.healthRecords = healthRecords
+            
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+            
+        }
         
         autoRefresh()
     }
@@ -102,19 +113,37 @@ extension GoalsViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return self.goals.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.goals.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let goalTableViewCell = tableView.dequeueReusableCell(withIdentifier: "GoalTableViewCellIdentifier", for: indexPath) as? GoalTableViewCell {
             
-            //summaryTableViewCell.lastTimeLabel
+            let goal = self.goals[indexPath.section]
+            
+            if let type = goal.type, let trophy = goal.reward.trophy {
+                
+                var completion: Int = 0
+                var lastTime = Date()
+                
+                for item in healthRecords {
+                    
+                    if item.type == type {
+                        
+                        completion = Int(item.value)
+                        lastTime = item.lastTime
+                        
+                        break
+                    }
+                }
+                goalTableViewCell.configure(type, goal.title ?? "", goal.description ?? "", lastTime.toHourMinute(), completion, Int(goal.value ?? 0), Int(goal.reward.points ?? 0), trophy)
+            }
             
             return goalTableViewCell
             

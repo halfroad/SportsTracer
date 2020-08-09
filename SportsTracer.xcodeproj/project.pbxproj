@@ -222,10 +222,12 @@
 		EEAF1FEF24DFB4F600DBDBE9 /* HealthRecordTableViewCellI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecordTableViewCellI.swift; sourceTree = "<group>"; };
 		EEAF1FF424DFF3C600DBDBE9 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
+		EEC4C6F724E06BEC00DEF571 /* Pods-SportsTracer-SportsTracerUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Pods-SportsTracer-SportsTracerUITests.xctestplan"; sourceTree = "<group>"; };
+		EEC4C6FD24E06E8D00DEF571 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		EEC4C6FE24E06EFD00DEF571 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizations.strings; sourceTree = "<group>"; };
 		EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EED398E924DAEC8900D0C0E7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		FADF59CB24D8171600BC147A /* SportsTracerDEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsTracerDEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADF59CE24D8171600BC147A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADF59D024D8171600BC147A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -510,6 +512,7 @@
 			isa = PBXGroup;
 			children = (
 				FADF59F324D8171800BC147A /* SportsTracerUITests.swift */,
+				EEC4C6F724E06BEC00DEF571 /* Pods-SportsTracer-SportsTracerUITests.xctestplan */,
 				FADF59F524D8171800BC147A /* Info.plist */,
 			);
 			path = SportsTracerUITests;
@@ -1218,6 +1221,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EE8FA92724DC36660041819D /* zh-Hans */,
+				EEC4C6FE24E06EFD00DEF571 /* en */,
 			);
 			name = Localizations.strings;
 			sourceTree = "<group>";
@@ -1226,7 +1230,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FADF59D524D8171600BC147A /* Base */,
-				EED398E924DAEC8900D0C0E7 /* zh-Hans */,
+				EEC4C6FD24E06E8D00DEF571 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

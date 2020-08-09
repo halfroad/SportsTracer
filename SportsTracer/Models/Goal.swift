@@ -38,7 +38,6 @@ struct Goal: Decodable {
         case step = "step"
         case walkingDistance = "walking_distance"
         case runningDistance = "running_distance"
-        case zombieHand = "zombie_hand"
     }
     
     var type: Types? = .unknown
