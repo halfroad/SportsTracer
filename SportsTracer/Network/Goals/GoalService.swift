@@ -32,7 +32,7 @@ class GoalService: SecuredNetworkService {
                         
                         if let goalsResponse = try? decoder.decode(GoalsPayload.self, from: data) {
                             
-                            completionHandler (false, goalsResponse.items, nil)
+                            completionHandler (result, goalsResponse.items, nil)
                         } else {
                             let error = NSError (domain: ErrorHandling.errorDomain, code: ErrorHandling.errorDomainDefaultCode, userInfo: [NSLocalizedDescriptionKey : "Invalid JSON"])
                             completionHandler (false, [Goal](), error)

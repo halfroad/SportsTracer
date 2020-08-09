@@ -15,6 +15,7 @@ class HealthDataManager: NSObject {
     private let healthStore: HKHealthStore
 
     override init() {
+        
         guard HKHealthStore.isHealthDataAvailable() else { fatalError("This app requires a device that supports HealthKit") }
         
         healthStore = HKHealthStore()
@@ -23,6 +24,63 @@ class HealthDataManager: NSObject {
         // https://developer.apple.com/documentation/healthkit/samples/reading_and_writing_healthkit_series_data
         //https://www.jianshu.com/p/62e137e0ae25
     }
+    
+    func acquireHealthRecords(_ completionHandler: @escaping([(name: String, value: Double, unit: String, lastTime: Date)]) -> Void) -> Void {
+        
+        var records = [(name: String, value: Double, unit: String, lastTime: Date)]()
+        
+        let dispatchQueue = DispatchQueue.global()
+        let dispatchGroup = DispatchGroup()
+        let dispatchSemaphore = DispatchSemaphore(value: 1)
+        
+        dispatchQueue.async(group: dispatchGroup) { [weak self] in
+            
+            dispatchSemaphore.wait()
+            
+            self?.querySteps { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
+
+                let item = (name: NSLocalizedString("Steps", comment: "Steps"), value: recordWrittenByMobilePhone, unit: NSLocalizedString("steps", comment: "steps"), lastTime)
+                
+                records.append(item)
+                
+                dispatchSemaphore.signal()
+            }
+        }
+        
+        dispatchQueue.async(group: dispatchGroup) { [weak self] in
+            
+            dispatchSemaphore.wait()
+            
+            self?.queryDistanceWalkingRunnings { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
+
+                let item = (name: NSLocalizedString("Walk + Runing Distance", comment: "Walk + Runing Distance"), value: recordWrittenByMobilePhone, unit.unitString, lastTime)
+                
+                records.append(item)
+                
+                dispatchSemaphore.signal()
+            }
+        }
+        
+        dispatchQueue.async(group: dispatchGroup) { [weak self] in
+            
+            dispatchSemaphore.wait()
+            
+            self?.queryHeartRate { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
+
+                let item = (name: NSLocalizedString("Heart Rate", comment: "Heart Rate"), value: recordWrittenByMobilePhone, unit: NSLocalizedString("BPM", comment: "BPM"), lastTime)
+                
+                records.append(item)
+                dispatchSemaphore.signal()
+                
+                completionHandler(records)
+            }
+        }
+    }
+}
+
+// MARK -- Authorizations
+
+extension HealthDataManager {
     
     func assignHealthStore(_ rootViewController: UIViewController) {
     
@@ -57,58 +115,68 @@ class HealthDataManager: NSObject {
             }
         })
     }
+}
+
+// MARK -- Queries
+
+extension HealthDataManager {
     
-    func querySteps(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double) -> Void) -> Void {
+    func querySteps(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double, _ unit: HKUnit, _ lastTime: Date) -> Void) -> Void {
         
         requestAuthorizations { [weak self] (result) in
             
-            self?.queryRecords(HKQuantityTypeIdentifier.stepCount, { (recordWrittenByApp, recordWrittenByMobilePhone) in
-                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone)
+            self?.queryRecords(HKQuantityTypeIdentifier.stepCount, HKUnit.count(), { (recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
+                
+                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime)
             })
         }
     }
     
-    func queryDistanceWalkingRunnings(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double) -> Void) -> Void {
+    func queryDistanceWalkingRunnings(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double, _ unit: HKUnit, _ lastTime: Date) -> Void) -> Void {
         
         requestAuthorizations { [weak self] (result) in
             
-            self?.queryRecords(HKQuantityTypeIdentifier.distanceWalkingRunning, { (recordWrittenByApp, recordWrittenByMobilePhone) in
-                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone)
+            let unit = HKUnit.meterUnit(with: .kilo)
+            self?.queryRecords(HKQuantityTypeIdentifier.distanceWalkingRunning, unit, { (recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
+                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime)
             })
         }
     }
     
-    func queryDistanceSwimming(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double) -> Void) -> Void {
+    func queryDistanceSwimming(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double, _ unit: HKUnit, _ lastTime: Date) -> Void) -> Void {
         
         requestAuthorizations { [weak self] (result) in
             
-            self?.queryRecords(HKQuantityTypeIdentifier.distanceSwimming, { (recordWrittenByApp, recordWrittenByMobilePhone) in
-                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone)
+            let unit = HKUnit.meterUnit(with: .kilo)
+            self?.queryRecords(HKQuantityTypeIdentifier.distanceSwimming, unit, { (recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
+                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime)
             })
         }
     }
     
-    func queryHeartRate(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double) -> Void) -> Void {
+    func queryHeartRate(_ completionHandler: @escaping(_ isAuthorised: Bool, _ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double, _ unit: HKUnit, _ lastTime: Date) -> Void) -> Void {
         
         requestAuthorizations { [weak self] (result) in
             
-            self?.queryRecords(HKQuantityTypeIdentifier.heartRate, { (recordWrittenByApp, recordWrittenByMobilePhone) in
-                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone)
+            self?.queryRecords(HKQuantityTypeIdentifier.heartRate, HKUnit.count().unitDivided(by: HKUnit.minute()), { (recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
+
+                completionHandler(result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime)
             })
         }
     }
 }
 
+// MARK -- Query the health records.
+
 extension HealthDataManager {
     
-    func queryRecords(_ typeIdentifier: HKQuantityTypeIdentifier, _ completionHandler: @escaping(_ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double) -> Void) {
+    func queryRecords(_ typeIdentifier: HKQuantityTypeIdentifier, _ unit: HKUnit, _ completionHandler: @escaping(_ recordWrittenByApp: Double, _ recordWrittenByMobilePhone: Double, _ unit: HKUnit, _ lastTime: Date) -> Void) {
         
-        HKQuantityType.quantityType(forIdentifier: typeIdentifier)
         // NSSortDescriptors is used to sort the healt data
         let start = NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)
         let stop  = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
         let now = Date()
-        guard let sampleType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount) else {
+        guard let sampleType = HKQuantityType.quantityType(forIdentifier: typeIdentifier) else {
             fatalError("*** This method should never fail ***")
         }
         
@@ -137,24 +205,30 @@ extension HealthDataManager {
                 return
             }
             
+            var lastTime: Date = startDate ?? Date()
+            
             for record in records {
                 // Record written by current app.
                 if record.sourceRevision.source.bundleIdentifier == Bundle.main.bundleIdentifier {
-                    print("Record written by app")
                     if record.isKind(of: HKQuantitySample.self) {
-                        recordWrittenByApp = recordWrittenByApp + record.quantity.doubleValue(for: HKUnit.count())
+                        recordWrittenByApp = recordWrittenByApp + record.quantity.doubleValue(for: unit)
+                        
                     }
                 } else {
                     // Record created by mobile health sensor
                     if record.isKind(of: HKQuantitySample.self) {
-                        recordWrittenByMobilePhone = recordWrittenByMobilePhone + record.quantity.doubleValue(for: HKUnit.count())
+                        recordWrittenByMobilePhone = recordWrittenByMobilePhone + record.quantity.doubleValue(for: unit)
                     }
                 }
+                
+                if lastTime < record.endDate {
+                    lastTime = record.endDate
+                }
             }
-            
-            completionHandler(recordWrittenByApp, recordWrittenByMobilePhone)
+                        
+            completionHandler(recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime)
         }
     
-        healthStore.execute(query)   //开始查询
+        healthStore.execute(query)  // Start the Query
     }
 }

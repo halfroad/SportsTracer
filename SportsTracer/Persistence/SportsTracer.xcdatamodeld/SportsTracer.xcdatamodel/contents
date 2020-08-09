@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="GoalEntity" representedClassName="GoalEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="remark" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="reward" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RewardEntity" inverseName="goals" inverseEntity="RewardEntity"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TypeEntity" inverseName="goals" inverseEntity="TypeEntity"/>
+    </entity>
+    <entity name="RewardEntity" representedClassName="RewardEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="points" optional="YES" attributeType="Integer 64" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="trophy" optional="YES" attributeType="String"/>
+        <relationship name="goals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoalEntity" inverseName="reward" inverseEntity="GoalEntity"/>
+    </entity>
+    <entity name="TypeEntity" representedClassName="TypeEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="goals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoalEntity" inverseName="type" inverseEntity="GoalEntity"/>
+    </entity>
+    <elements>
+        <element name="GoalEntity" positionX="-358.22265625" positionY="282.3046875" width="128" height="133"/>
+        <element name="RewardEntity" positionX="-156.50390625" positionY="297.46484375" width="128" height="88"/>
+        <element name="TypeEntity" positionX="-261" positionY="324" width="128" height="73"/>
+    </elements>
 </model>

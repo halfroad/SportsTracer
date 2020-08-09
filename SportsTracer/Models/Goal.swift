@@ -11,9 +11,11 @@ import UIKit
 struct GoalsPayload: Decodable {
     
     var items = [Goal]()
+    var nextPageToken: String = ""
     
     enum CodingKeys: String, CodingKey {
         case items // The top level "items" key
+        case nextPageToken
     }
     
     init(from decoder: Decoder) throws {
@@ -21,6 +23,7 @@ struct GoalsPayload: Decodable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         items = try values.decode([Goal].self, forKey: .items)
+        nextPageToken = try values.decode(String.self, forKey: .nextPageToken)
     }
 }
 
@@ -39,7 +42,7 @@ struct Goal: Decodable {
     }
     
     var type: Types? = .unknown
-    var goal: Int? = -1
+    var value: Int64? = -1
     
     struct Reward: Decodable {
         
@@ -52,15 +55,15 @@ struct Goal: Decodable {
         }
         
         var trophy: Trophies? = .unknown
-        var points: Int? = 0
+        var points: Int64? = 0
         
         enum CodingKeys: String, CodingKey {
             case trophy, points
         }
         
-        init() {
-            trophy = .unknown
-            points = -1
+        init(_ trophy: Trophies? = .unknown, _ points: Int64? = -1) {
+            self.trophy = trophy
+            self.points = points
         }
         
         init(from decoder: Decoder) throws {
@@ -68,7 +71,7 @@ struct Goal: Decodable {
             let values = try decoder.container(keyedBy: CodingKeys.self)
             
             trophy = Goal.Reward.Trophies(rawValue: try values.decode(String.self, forKey: .trophy)) ?? .unknown
-            points = try values.decode(Int.self, forKey: .points)
+            points = Int64(try values.decode(Int.self, forKey: .points))
         }
     }
     
@@ -76,6 +79,9 @@ struct Goal: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case id, title, description, type, goal, reward
+    }
+    
+    init(_ id: String? = "", _ title: String? = "", _ description: String? = "", _ type: Types? = .unknown, _ goal: Int? = -1, _ reward: Reward? = Reward()) {
     }
 
     init(from decoder: Decoder) throws {
@@ -86,7 +92,7 @@ struct Goal: Decodable {
         title = try values.decode(String.self, forKey: .title)
         description = try values.decode(String.self, forKey: .description)
         type = Goal.Types(rawValue: try values.decode(String.self, forKey: .type)) ?? .unknown
-        goal = try values.decode(Int.self, forKey: .goal)
+        value = try values.decode(Int64.self, forKey: .goal)
         reward = try values.decode(Reward.self, forKey: .reward)
     }
 }

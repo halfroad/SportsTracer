@@ -17,17 +17,20 @@ class SSLPinning: NSObject {
         var disposition = URLSession.AuthChallengeDisposition.performDefaultHandling
         var credential: URLCredential = URLCredential()
         
-        switch challenge.protectionSpace.authenticationMethod {
-            case NSURLAuthenticationMethodServerTrust:
-                if let serverTrust = challenge.protectionSpace.serverTrust {
-                    if self.checkTrust(serverTrust, challenge.protectionSpace.host) {
-                        credential = URLCredential(trust: serverTrust)
-                        disposition = .useCredential
-                    }
-            }
+        if Settings.SSLPiningEnbaled {
             
-            default:
-            print("Default")
+            switch challenge.protectionSpace.authenticationMethod {
+                case NSURLAuthenticationMethodServerTrust:
+                    if let serverTrust = challenge.protectionSpace.serverTrust {
+                        if self.checkTrust(serverTrust, challenge.protectionSpace.host) {
+                            credential = URLCredential(trust: serverTrust)
+                            disposition = .useCredential
+                        }
+                }
+                
+                default:
+                print("Default")
+            }
         }
         
         if let handler = completionHandler {

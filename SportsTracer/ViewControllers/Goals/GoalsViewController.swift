@@ -11,6 +11,8 @@ import PKHUD
 
 class GoalsViewController: UITableViewController {
 
+    var goals = [Goal]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +26,7 @@ class GoalsViewController: UITableViewController {
         
         let refreshControl = UIRefreshControl()
         
-        refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("Pull to refresh your goals", comment: "Pull to refresh your goals"))
+        refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("Pull down to refresh your goals", comment: "Pull down to refresh your goals"))
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
         
         self.tableView.refreshControl = refreshControl
@@ -54,7 +56,7 @@ extension GoalsViewController {
     @objc func handleRefresh(sender: UIRefreshControl) {
         
         if sender.isRefreshing {
-            sender.attributedTitle = NSAttributedString(string: NSLocalizedString("Synchronising your goals", comment: "Synchronising your goals"))
+            sender.attributedTitle = NSAttributedString(string: NSLocalizedString("Acquiring your goals", comment: "Acquiring your goals"))
             self.acquiredGoals(sender)
         }
     }
@@ -69,14 +71,18 @@ extension GoalsViewController {
         
         let goalService = GoalService()
         
-        goalService.acquireGoals("Jinhui") { [weak refreshControl] (result, goals, error) in
+        goalService.acquireGoals("Jinhui") { [weak refreshControl, self] (result, goals, error) in
             
             if result {
                 
-                if let data = try? NSKeyedArchiver.archivedData(withRootObject: goals, requiringSecureCoding: true) {
-                    
-                    print(data)
+                self.goals = goals
+                
+                for goal in goals {
+                    let _ = DataManager.createGoal(goal)
+                    PersistenceManager.shared.saveContext()
                 }
+                
+                self.tableView.reloadData()
                 
             } else {
                 HUD.flash(.labeledError(title: error?.localizedDescription, subtitle: nil), delay: 3.0)
@@ -84,7 +90,7 @@ extension GoalsViewController {
             
             if let refreshControl = refreshControl {
                 refreshControl.endRefreshing()
-                refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("Pull to refresh your goals", comment: "Pull to refresh your goals"))
+                refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("Pull down to refresh your goals", comment: "Pull down to refresh your goals"))
             }
         }
     }
@@ -96,23 +102,26 @@ extension GoalsViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.goals.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        if let goalTableViewCell = tableView.dequeueReusableCell(withIdentifier: "GoalTableViewCellIdentifier", for: indexPath) as? GoalTableViewCell {
+            
+            //summaryTableViewCell.lastTimeLabel
+            
+            return goalTableViewCell
+            
+        }
 
-        // Configure the cell...
-
-        return cell
+        return UITableViewCell()
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

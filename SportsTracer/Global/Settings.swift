@@ -11,4 +11,5 @@ import UIKit
 class Settings: NSObject {
 
     static let Host = "https://thebigachallenge.appspot.com"
+    static let SSLPiningEnbaled = false
 }

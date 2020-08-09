@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UITableViewController {
 
+    var healthRecords = [(name: String, value: Double, unit: String, lastTime: Date)]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,29 +20,56 @@ class HomeViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        HealthDataManager.shared.acquireHealthRecords { [weak self] (healthRecords) in
+            
+            self?.healthRecords = healthRecords
+            
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+            
+        }
     }
+}
 
+extension HomeViewController {
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return healthRecords.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return 20.0
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 100.0
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        if let healthRecordTableViewCell = tableView.dequeueReusableCell(withIdentifier: "HealthRecordTableViewCellIdentifier", for: indexPath) as? HealthRecordTableViewCell {
+            
+            healthRecordTableViewCell.configure(self.healthRecords[indexPath.section].name, self.healthRecords[indexPath.section].lastTime.toHourMinute(), Float(self.healthRecords[indexPath.section].value), self.healthRecords[indexPath.section].unit)
+            
+            return healthRecordTableViewCell
+        }
 
         // Configure the cell...
 
-        return cell
+        return UITableViewCell()
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -58,7 +87,7 @@ class HomeViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 
@@ -86,5 +115,4 @@ class HomeViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
