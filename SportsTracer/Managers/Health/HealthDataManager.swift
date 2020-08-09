@@ -19,15 +19,11 @@ class HealthDataManager: NSObject {
         guard HKHealthStore.isHealthDataAvailable() else { fatalError("This app requires a device that supports HealthKit") }
         
         healthStore = HKHealthStore()
-        
-        // https://www.jianshu.com/p/04578f47efc0
-        // https://developer.apple.com/documentation/healthkit/samples/reading_and_writing_healthkit_series_data
-        //https://www.jianshu.com/p/62e137e0ae25
     }
     
-    func acquireHealthRecords(_ completionHandler: @escaping([(name: String, value: Double, unit: String, lastTime: Date)]) -> Void) -> Void {
+    func acquireHealthRecords(_ completionHandler: @escaping([(name: String, icon: String, value: Double, unit: String, lastTime: Date)]) -> Void) -> Void {
         
-        var records = [(name: String, value: Double, unit: String, lastTime: Date)]()
+        var records = [(name: String, icon: String, value: Double, unit: String, lastTime: Date)]()
         
         let dispatchQueue = DispatchQueue.global()
         let dispatchGroup = DispatchGroup()
@@ -39,7 +35,7 @@ class HealthDataManager: NSObject {
             
             self?.querySteps { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
 
-                let item = (name: NSLocalizedString("Steps", comment: "Steps"), value: recordWrittenByMobilePhone, unit: NSLocalizedString("steps", comment: "steps"), lastTime)
+                let item = (name: NSLocalizedString("Number of Steps", comment: "Number of Steps"), icon: "Walking", value: recordWrittenByMobilePhone, unit: NSLocalizedString("steps", comment: "steps"), lastTime)
                 
                 records.append(item)
                 
@@ -53,7 +49,7 @@ class HealthDataManager: NSObject {
             
             self?.queryDistanceWalkingRunnings { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
 
-                let item = (name: NSLocalizedString("Walk + Runing Distance", comment: "Walk + Runing Distance"), value: recordWrittenByMobilePhone, unit.unitString, lastTime)
+                let item = (name: NSLocalizedString("Walk + Runing Distance", comment: "Walk + Runing Distance"), icon: "Running", value: recordWrittenByMobilePhone, unit.unitString, lastTime)
                 
                 records.append(item)
                 
@@ -67,7 +63,7 @@ class HealthDataManager: NSObject {
             
             self?.queryHeartRate { (result, recordWrittenByApp, recordWrittenByMobilePhone, unit, lastTime) in
 
-                let item = (name: NSLocalizedString("Heart Rate", comment: "Heart Rate"), value: recordWrittenByMobilePhone, unit: NSLocalizedString("BPM", comment: "BPM"), lastTime)
+                let item = (name: NSLocalizedString("Heart Rate", comment: "Heart Rate"), icon: "Heartbeat", value: recordWrittenByMobilePhone, unit: NSLocalizedString("BPM", comment: "BPM"), lastTime)
                 
                 records.append(item)
                 dispatchSemaphore.signal()
@@ -82,15 +78,6 @@ class HealthDataManager: NSObject {
 
 extension HealthDataManager {
     
-    func assignHealthStore(_ rootViewController: UIViewController) {
-    
-    // Enumerate the view controller hierarchy and set the health store where appropriate.
-        
-        rootViewController.enumerateHierarchy { viewController in
-            guard var healthStoreContainer = viewController as? HealthStoreContainer else { return }
-            healthStoreContainer.healthStore = healthStore
-        }
-    }
     func requestAuthorizations(_ authorisedHandler: ((_ isAuthorised: Bool) -> Void)? = nil) {
 
         // Read Health Data

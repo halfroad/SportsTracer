@@ -10,6 +10,7 @@ import UIKit
 
 class HealthRecordTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var lastTimeLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!
@@ -25,12 +26,15 @@ class HealthRecordTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(_ name: String, _ lastTime: String, _ value: Float, _ unit: String) -> Void {
+    func configure(_ name: String, _ icon: String, _ lastTime: String, _ value: Double, _ unit: String) -> Void {
         
         self.titleLabel.text = name
+        self.iconImageView.image = UIImage(named: icon)
         self.lastTimeLabel.text = lastTime
         
-        let valueAttributedString = NSMutableAttributedString(string: "\(value)", attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .largeTitle)])
+        let value = Int(value)
+        
+        let valueAttributedString = NSMutableAttributedString(string: "\(value) ", attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .largeTitle)])
         let unitAttributedString = NSMutableAttributedString(string: unit, attributes: [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body), NSAttributedString.Key.foregroundColor: UIColor.systemGray])
         
         valueAttributedString.append(unitAttributedString)

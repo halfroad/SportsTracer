@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UITableViewController {
 
-    var healthRecords = [(name: String, value: Double, unit: String, lastTime: Date)]()
+    var healthRecords = [(name: String, icon: String, value: Double, unit: String, lastTime: Date)]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +61,7 @@ extension HomeViewController {
         
         if let healthRecordTableViewCell = tableView.dequeueReusableCell(withIdentifier: "HealthRecordTableViewCellIdentifier", for: indexPath) as? HealthRecordTableViewCell {
             
-            healthRecordTableViewCell.configure(self.healthRecords[indexPath.section].name, self.healthRecords[indexPath.section].lastTime.toHourMinute(), Float(self.healthRecords[indexPath.section].value), self.healthRecords[indexPath.section].unit)
+            healthRecordTableViewCell.configure(self.healthRecords[indexPath.section].name, self.healthRecords[indexPath.section].icon, self.healthRecords[indexPath.section].lastTime.toHourMinute(), self.healthRecords[indexPath.section].value, self.healthRecords[indexPath.section].unit)
             
             return healthRecordTableViewCell
         }

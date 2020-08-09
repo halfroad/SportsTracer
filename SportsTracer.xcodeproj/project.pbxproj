@@ -150,10 +150,6 @@
 		EEC4C6EF24E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
 		EEC4C6F024E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
 		EEC4C6F124E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
-		EEC4C6F324E0443F00DEF571 /* HealthStoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6F224E0443F00DEF571 /* HealthStoreContainer.swift */; };
-		EEC4C6F424E0443F00DEF571 /* HealthStoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6F224E0443F00DEF571 /* HealthStoreContainer.swift */; };
-		EEC4C6F524E0443F00DEF571 /* HealthStoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6F224E0443F00DEF571 /* HealthStoreContainer.swift */; };
-		EEC4C6F624E0443F00DEF571 /* HealthStoreContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6F224E0443F00DEF571 /* HealthStoreContainer.swift */; };
 		EED398CC24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */; };
 		EED398E324DAEB9900D0C0E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */; };
 		FADF59CF24D8171600BC147A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59CE24D8171600BC147A /* AppDelegate.swift */; };
@@ -226,7 +222,6 @@
 		EEAF1FEF24DFB4F600DBDBE9 /* HealthRecordTableViewCellI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecordTableViewCellI.swift; sourceTree = "<group>"; };
 		EEAF1FF424DFF3C600DBDBE9 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
-		EEC4C6F224E0443F00DEF571 /* HealthStoreContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStoreContainer.swift; sourceTree = "<group>"; };
 		EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -414,7 +409,6 @@
 			isa = PBXGroup;
 			children = (
 				EE090F7624DAB54000300A4F /* HealthDataManager.swift */,
-				EEC4C6F224E0443F00DEF571 /* HealthStoreContainer.swift */,
 			);
 			path = Health;
 			sourceTree = "<group>";
@@ -1074,7 +1068,6 @@
 				EE8FA96B24DC4B030041819D /* UIRefreshControl+AutoBeginRefresh.swift in Sources */,
 				EEC4C6EF24E02FA500DEF571 /* DateUtility.swift in Sources */,
 				EE8FA96C24DC4B030041819D /* SettingsViewController.swift in Sources */,
-				EEC4C6F424E0443F00DEF571 /* HealthStoreContainer.swift in Sources */,
 				EEAF1FEB24DFAA3900DBDBE9 /* EntityManager.swift in Sources */,
 				EE47A60A24DEF3120090621A /* PersistenceManager.swift in Sources */,
 				EE47A63024DF08110090621A /* DataManager.swift in Sources */,
@@ -1110,7 +1103,6 @@
 				EE8FA99224DC4B0A0041819D /* UIRefreshControl+AutoBeginRefresh.swift in Sources */,
 				EEC4C6F024E02FA500DEF571 /* DateUtility.swift in Sources */,
 				EE8FA99324DC4B0A0041819D /* SettingsViewController.swift in Sources */,
-				EEC4C6F524E0443F00DEF571 /* HealthStoreContainer.swift in Sources */,
 				EEAF1FEC24DFAA3900DBDBE9 /* EntityManager.swift in Sources */,
 				EE47A60B24DEF3120090621A /* PersistenceManager.swift in Sources */,
 				EE47A63124DF08110090621A /* DataManager.swift in Sources */,
@@ -1146,7 +1138,6 @@
 				EE8FA9B924DC4B110041819D /* UIRefreshControl+AutoBeginRefresh.swift in Sources */,
 				EEC4C6F124E02FA500DEF571 /* DateUtility.swift in Sources */,
 				EE8FA9BA24DC4B110041819D /* SettingsViewController.swift in Sources */,
-				EEC4C6F624E0443F00DEF571 /* HealthStoreContainer.swift in Sources */,
 				EEAF1FED24DFAA3900DBDBE9 /* EntityManager.swift in Sources */,
 				EE47A60C24DEF3120090621A /* PersistenceManager.swift in Sources */,
 				EE47A63224DF08110090621A /* DataManager.swift in Sources */,
@@ -1182,7 +1173,6 @@
 				EE8FA91A24DC0AFE0041819D /* UIRefreshControl+AutoBeginRefresh.swift in Sources */,
 				EEC4C6EE24E02FA500DEF571 /* DateUtility.swift in Sources */,
 				EED398CC24DAE67400D0C0E7 /* SettingsViewController.swift in Sources */,
-				EEC4C6F324E0443F00DEF571 /* HealthStoreContainer.swift in Sources */,
 				EEAF1FEA24DFAA3900DBDBE9 /* EntityManager.swift in Sources */,
 				EE47A60924DEF3120090621A /* PersistenceManager.swift in Sources */,
 				EE47A62F24DF08110090621A /* DataManager.swift in Sources */,
