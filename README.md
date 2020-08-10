@@ -39,6 +39,12 @@ The model for Goal, Type, Reward. The model will be associated with API by JSOND
 ## Managers
 Middle layer between UI/Controller and Network and CoreData and HKHealthKit. The creation for Core Data Entity is here, and HKHealthKit data preparation is also here.
 
+## View Controllers
+View Controllers that interact both with UI and Manager.
+
+## User Interface.
+Storyboard and Customised UITabbleViewCells
+
 # Miscellaneous
 
 ## Compatible backwards
