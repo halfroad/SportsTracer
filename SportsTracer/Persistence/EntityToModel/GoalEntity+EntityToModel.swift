@@ -14,6 +14,6 @@ extension GoalEntity: ModelConvertableProtocol {
     
     func toModel() -> Goal {
         
-        return Goal(self.id, self.title, self.remark,self.type?.toModel() , Int(self.value),self.reward?.toModel())
+        return Goal(self.id, self.title, self.remark,self.type?.toModel() , self.value,self.reward?.toModel())
     }
 }

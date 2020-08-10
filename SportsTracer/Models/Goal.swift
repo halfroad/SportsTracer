@@ -74,13 +74,20 @@ struct Goal: Decodable {
         }
     }
     
-    var reward = Reward()
+    var reward: Reward? = Reward()
     
     enum CodingKeys: String, CodingKey {
         case id, title, description, type, goal, reward
     }
     
-    init(_ id: String? = "", _ title: String? = "", _ description: String? = "", _ type: Types? = .unknown, _ goal: Int? = -1, _ reward: Reward? = Reward()) {
+    init(_ id: String? = "", _ title: String? = "", _ description: String? = "", _ type: Types? = .unknown, _ value: Int64? = -1, _ reward: Reward? = Reward()) {
+        
+        self.id = id
+        self.title = title
+        self.description = description
+        self.type = type
+        self.value = value
+        self.reward = reward
     }
 
     init(from decoder: Decoder) throws {

@@ -44,10 +44,23 @@ class GoalsViewController: UITableViewController {
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
             }
-            
         }
         
-        autoRefresh()
+        let items = DataManager.findGoals()
+        
+        if items.count == 0 {
+            autoRefresh()
+        } else {
+            
+            goals.removeAll()
+            
+            for item in items {
+                let goal = item.toModel()
+                goals.append(goal)
+            }
+            
+            self.tableView.reloadData()
+        }
     }
 }
 
@@ -90,7 +103,6 @@ extension GoalsViewController {
                 
                 for goal in goals {
                     let _ = DataManager.createGoal(goal)
-                    PersistenceManager.shared.saveContext()
                 }
                 
                 self.tableView.reloadData()
@@ -127,22 +139,22 @@ extension GoalsViewController {
             
             let goal = self.goals[indexPath.section]
             
-            if let type = goal.type, let trophy = goal.reward.trophy {
+            if let type = goal.type, let trophy = goal.reward?.trophy {
                 
-                var completion: Int = 0
+                var completion: Int64 = 0
                 var lastTime = Date()
                 
                 for item in healthRecords {
                     
                     if item.type == type {
                         
-                        completion = Int(item.value)
+                        completion = Int64(item.value)
                         lastTime = item.lastTime
                         
                         break
                     }
                 }
-                goalTableViewCell.configure(type, goal.title ?? "", goal.description ?? "", lastTime.toHourMinute(), completion, Int(goal.value ?? 0), Int(goal.reward.points ?? 0), trophy)
+                goalTableViewCell.configure(type, goal.title ?? "", goal.description ?? "", lastTime.toHourMinute(), completion, goal.value ?? 0, goal.reward?.points ?? 0, trophy)
             }
             
             return goalTableViewCell

@@ -146,6 +146,14 @@
 		EEAF1FF624DFF3C600DBDBE9 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF1FF424DFF3C600DBDBE9 /* GoalTableViewCell.swift */; };
 		EEAF1FF724DFF3C600DBDBE9 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF1FF424DFF3C600DBDBE9 /* GoalTableViewCell.swift */; };
 		EEAF1FF824DFF3C600DBDBE9 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF1FF424DFF3C600DBDBE9 /* GoalTableViewCell.swift */; };
+		EEB08C4824E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4724E0DEAE006492A8 /* Type+ModelToEntity.swift */; };
+		EEB08C4924E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4724E0DEAE006492A8 /* Type+ModelToEntity.swift */; };
+		EEB08C4A24E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4724E0DEAE006492A8 /* Type+ModelToEntity.swift */; };
+		EEB08C4B24E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4724E0DEAE006492A8 /* Type+ModelToEntity.swift */; };
+		EEB08C4D24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */; };
+		EEB08C4E24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */; };
+		EEB08C4F24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */; };
+		EEB08C5024E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */; };
 		EEC4C6EE24E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
 		EEC4C6EF24E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
 		EEC4C6F024E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
@@ -221,6 +229,8 @@
 		EEAF1FE924DFAA3800DBDBE9 /* EntityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		EEAF1FEF24DFB4F600DBDBE9 /* HealthRecordTableViewCellI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRecordTableViewCellI.swift; sourceTree = "<group>"; };
 		EEAF1FF424DFF3C600DBDBE9 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		EEB08C4724E0DEAE006492A8 /* Type+ModelToEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type+ModelToEntity.swift"; sourceTree = "<group>"; };
+		EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reward+ModelToEntity.swift"; sourceTree = "<group>"; };
 		EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		EEC4C6F724E06BEC00DEF571 /* Pods-SportsTracer-SportsTracerUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Pods-SportsTracer-SportsTracerUITests.xctestplan"; sourceTree = "<group>"; };
 		EEC4C6FD24E06E8D00DEF571 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -386,6 +396,8 @@
 			children = (
 				EE47A62324DF03230090621A /* EntityConvertableProtocol.swift */,
 				EE47A62824DF04020090621A /* Model+ModelToEntity.swift */,
+				EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */,
+				EEB08C4724E0DEAE006492A8 /* Type+ModelToEntity.swift */,
 			);
 			path = ModelToEntity;
 			sourceTree = "<group>";
@@ -1050,6 +1062,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A61524DEFAF50090621A /* TypeEntity+EntityToModel.swift in Sources */,
+				EEB08C4924E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */,
 				EEAF1FF124DFB4F600DBDBE9 /* HealthRecordTableViewCellI.swift in Sources */,
 				EE8FA95E24DC4B030041819D /* NetwortService.swift in Sources */,
 				EE8FA95F24DC4B030041819D /* SportsTracer.xcdatamodeld in Sources */,
@@ -1076,6 +1089,7 @@
 				EE47A63024DF08110090621A /* DataManager.swift in Sources */,
 				EE8FA96D24DC4B030041819D /* AppDelegate.swift in Sources */,
 				EE47A61A24DEFB160090621A /* RewardEntity+EntityToModel.swift in Sources */,
+				EEB08C4E24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */,
 				EE8FA96E24DC4B030041819D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1085,6 +1099,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A61624DEFAF50090621A /* TypeEntity+EntityToModel.swift in Sources */,
+				EEB08C4A24E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */,
 				EEAF1FF224DFB4F600DBDBE9 /* HealthRecordTableViewCellI.swift in Sources */,
 				EE8FA98524DC4B0A0041819D /* NetwortService.swift in Sources */,
 				EE8FA98624DC4B0A0041819D /* SportsTracer.xcdatamodeld in Sources */,
@@ -1111,6 +1126,7 @@
 				EE47A63124DF08110090621A /* DataManager.swift in Sources */,
 				EE8FA99424DC4B0A0041819D /* AppDelegate.swift in Sources */,
 				EE47A61B24DEFB160090621A /* RewardEntity+EntityToModel.swift in Sources */,
+				EEB08C4F24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */,
 				EE8FA99524DC4B0A0041819D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1120,6 +1136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A61724DEFAF50090621A /* TypeEntity+EntityToModel.swift in Sources */,
+				EEB08C4B24E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */,
 				EEAF1FF324DFB4F600DBDBE9 /* HealthRecordTableViewCellI.swift in Sources */,
 				EE8FA9AC24DC4B110041819D /* NetwortService.swift in Sources */,
 				EE8FA9AD24DC4B110041819D /* SportsTracer.xcdatamodeld in Sources */,
@@ -1146,6 +1163,7 @@
 				EE47A63224DF08110090621A /* DataManager.swift in Sources */,
 				EE8FA9BB24DC4B110041819D /* AppDelegate.swift in Sources */,
 				EE47A61C24DEFB160090621A /* RewardEntity+EntityToModel.swift in Sources */,
+				EEB08C5024E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */,
 				EE8FA9BC24DC4B110041819D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1155,6 +1173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A61424DEFAF50090621A /* TypeEntity+EntityToModel.swift in Sources */,
+				EEB08C4824E0DEAE006492A8 /* Type+ModelToEntity.swift in Sources */,
 				EEAF1FF024DFB4F600DBDBE9 /* HealthRecordTableViewCellI.swift in Sources */,
 				FADF5A1024D823EF00BC147A /* NetwortService.swift in Sources */,
 				FADF59D924D8171600BC147A /* SportsTracer.xcdatamodeld in Sources */,
@@ -1181,6 +1200,7 @@
 				EE47A62F24DF08110090621A /* DataManager.swift in Sources */,
 				FADF59CF24D8171600BC147A /* AppDelegate.swift in Sources */,
 				EE47A61924DEFB160090621A /* RewardEntity+EntityToModel.swift in Sources */,
+				EEB08C4D24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */,
 				FADF59D124D8171600BC147A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

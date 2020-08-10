@@ -11,8 +11,8 @@ extension Goal: EntityConvertableProtocol {
     
     typealias T = GoalEntity
     
-    func toEntity() -> GoalEntity {
+    func toEntity() -> GoalEntity? {
         
-        return DataManager.createGoal(self.id, self.title, self.description, self.type?.rawValue, self.value, self.reward.trophy?.rawValue, self.reward.points)
+        return DataManager.createGoal(self.id, self.title, self.description, self.type?.rawValue, self.value, self.reward?.trophy?.rawValue, self.reward?.points)
     }
 }

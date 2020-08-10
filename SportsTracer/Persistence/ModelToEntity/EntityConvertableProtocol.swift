@@ -12,5 +12,5 @@ protocol EntityConvertableProtocol where Self: Decodable {
     
     associatedtype T
     
-    func toEntity() -> T
+    func toEntity() -> T?
 }

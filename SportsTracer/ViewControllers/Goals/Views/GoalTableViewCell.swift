@@ -32,7 +32,7 @@ class GoalTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure(_ type: Goal.Types, _ title: String, _ description: String, _ lastTime: String, _ completion: Int, _ goal: Int, _ points: Int, _ trophy: Goal.Reward.Trophies) -> Void {
+    func configure(_ type: Goal.Types, _ title: String, _ description: String, _ lastTime: String, _ completion: Int64, _ goal: Int64, _ points: Int64, _ trophy: Goal.Reward.Trophies) -> Void {
         
         var name = NSLocalizedString("Steps", comment: "Steps")
         var icon = "Walking"
