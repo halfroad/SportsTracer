@@ -1594,7 +1594,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsTracer.app/SportsTracer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsTracerDEV.app/SportsTracerDEV";
 			};
 			name = Debug;
 		};
@@ -1617,7 +1617,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsTracer.app/SportsTracer";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsTracerDEV.app/SportsTracerDEV";
 			};
 			name = Release;
 		};
