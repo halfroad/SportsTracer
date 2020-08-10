@@ -73,13 +73,9 @@
 		EE8FA96E24DC4B030041819D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D024D8171600BC147A /* SceneDelegate.swift */; };
 		EE8FA97024DC4B030041819D /* Pods_SportsTracer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A43D0C6E9378209E1CF449B /* Pods_SportsTracer.framework */; };
 		EE8FA97124DC4B030041819D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8FA95724DC4A3B0041819D /* HealthKit.framework */; };
-		EE8FA97324DC4B030041819D /* SportsTracerDEV-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93924DC40C50041819D /* SportsTracerDEV-Info.plist */; };
 		EE8FA97524DC4B030041819D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
-		EE8FA97624DC4B030041819D /* SportsTracerPROD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93A24DC40C50041819D /* SportsTracerPROD-Info.plist */; };
 		EE8FA97724DC4B030041819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
 		EE8FA97824DC4B030041819D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59D424D8171600BC147A /* Main.storyboard */; };
-		EE8FA97A24DC4B030041819D /* SportsTracerUAT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93724DC40C50041819D /* SportsTracerUAT-Info.plist */; };
-		EE8FA97B24DC4B030041819D /* SportsTracerQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93824DC40C50041819D /* SportsTracerQA-Info.plist */; };
 		EE8FA98524DC4B0A0041819D /* NetwortService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0F24D823EF00BC147A /* NetwortService.swift */; };
 		EE8FA98624DC4B0A0041819D /* SportsTracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D724D8171600BC147A /* SportsTracer.xcdatamodeld */; };
 		EE8FA98724DC4B0A0041819D /* UIViewController+Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FA94B24DC417A0041819D /* UIViewController+Enumerate.swift */; };
@@ -98,13 +94,9 @@
 		EE8FA99524DC4B0A0041819D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D024D8171600BC147A /* SceneDelegate.swift */; };
 		EE8FA99724DC4B0A0041819D /* Pods_SportsTracer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A43D0C6E9378209E1CF449B /* Pods_SportsTracer.framework */; };
 		EE8FA99824DC4B0A0041819D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8FA95724DC4A3B0041819D /* HealthKit.framework */; };
-		EE8FA99A24DC4B0A0041819D /* SportsTracerDEV-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93924DC40C50041819D /* SportsTracerDEV-Info.plist */; };
 		EE8FA99C24DC4B0A0041819D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
-		EE8FA99D24DC4B0A0041819D /* SportsTracerPROD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93A24DC40C50041819D /* SportsTracerPROD-Info.plist */; };
 		EE8FA99E24DC4B0A0041819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
 		EE8FA99F24DC4B0A0041819D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59D424D8171600BC147A /* Main.storyboard */; };
-		EE8FA9A124DC4B0A0041819D /* SportsTracerUAT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93724DC40C50041819D /* SportsTracerUAT-Info.plist */; };
-		EE8FA9A224DC4B0A0041819D /* SportsTracerQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93824DC40C50041819D /* SportsTracerQA-Info.plist */; };
 		EE8FA9AC24DC4B110041819D /* NetwortService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0F24D823EF00BC147A /* NetwortService.swift */; };
 		EE8FA9AD24DC4B110041819D /* SportsTracer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D724D8171600BC147A /* SportsTracer.xcdatamodeld */; };
 		EE8FA9AE24DC4B110041819D /* UIViewController+Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FA94B24DC417A0041819D /* UIViewController+Enumerate.swift */; };
@@ -123,13 +115,9 @@
 		EE8FA9BC24DC4B110041819D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF59D024D8171600BC147A /* SceneDelegate.swift */; };
 		EE8FA9BE24DC4B110041819D /* Pods_SportsTracer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A43D0C6E9378209E1CF449B /* Pods_SportsTracer.framework */; };
 		EE8FA9BF24DC4B110041819D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8FA95724DC4A3B0041819D /* HealthKit.framework */; };
-		EE8FA9C124DC4B110041819D /* SportsTracerDEV-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93924DC40C50041819D /* SportsTracerDEV-Info.plist */; };
 		EE8FA9C324DC4B110041819D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
-		EE8FA9C424DC4B110041819D /* SportsTracerPROD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93A24DC40C50041819D /* SportsTracerPROD-Info.plist */; };
 		EE8FA9C524DC4B110041819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
 		EE8FA9C624DC4B110041819D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59D424D8171600BC147A /* Main.storyboard */; };
-		EE8FA9C824DC4B110041819D /* SportsTracerUAT-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93724DC40C50041819D /* SportsTracerUAT-Info.plist */; };
-		EE8FA9C924DC4B110041819D /* SportsTracerQA-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93824DC40C50041819D /* SportsTracerQA-Info.plist */; };
 		EEAF1FEA24DFAA3900DBDBE9 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF1FE924DFAA3800DBDBE9 /* EntityManager.swift */; };
 		EEAF1FEB24DFAA3900DBDBE9 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF1FE924DFAA3800DBDBE9 /* EntityManager.swift */; };
 		EEAF1FEC24DFAA3900DBDBE9 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF1FE924DFAA3800DBDBE9 /* EntityManager.swift */; };
@@ -772,14 +760,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A60524DEEBC60090621A /* AppSpot.cer in Resources */,
-				EE8FA97324DC4B030041819D /* SportsTracerDEV-Info.plist in Resources */,
 				EE8FA97524DC4B030041819D /* LaunchScreen.storyboard in Resources */,
-				EE8FA97624DC4B030041819D /* SportsTracerPROD-Info.plist in Resources */,
 				EEB08C6624E0F0CD006492A8 /* Localizations.strings in Resources */,
 				EE8FA97724DC4B030041819D /* Assets.xcassets in Resources */,
 				EE8FA97824DC4B030041819D /* Main.storyboard in Resources */,
-				EE8FA97A24DC4B030041819D /* SportsTracerUAT-Info.plist in Resources */,
-				EE8FA97B24DC4B030041819D /* SportsTracerQA-Info.plist in Resources */,
 				EEB08C7224E0F12E006492A8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -789,14 +773,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A60624DEEBC60090621A /* AppSpot.cer in Resources */,
-				EE8FA99A24DC4B0A0041819D /* SportsTracerDEV-Info.plist in Resources */,
 				EE8FA99C24DC4B0A0041819D /* LaunchScreen.storyboard in Resources */,
-				EE8FA99D24DC4B0A0041819D /* SportsTracerPROD-Info.plist in Resources */,
 				EEB08C6724E0F0CD006492A8 /* Localizations.strings in Resources */,
 				EE8FA99E24DC4B0A0041819D /* Assets.xcassets in Resources */,
 				EE8FA99F24DC4B0A0041819D /* Main.storyboard in Resources */,
-				EE8FA9A124DC4B0A0041819D /* SportsTracerUAT-Info.plist in Resources */,
-				EE8FA9A224DC4B0A0041819D /* SportsTracerQA-Info.plist in Resources */,
 				EEB08C7324E0F12E006492A8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -806,14 +786,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE47A60724DEEBC60090621A /* AppSpot.cer in Resources */,
-				EE8FA9C124DC4B110041819D /* SportsTracerDEV-Info.plist in Resources */,
 				EE8FA9C324DC4B110041819D /* LaunchScreen.storyboard in Resources */,
-				EE8FA9C424DC4B110041819D /* SportsTracerPROD-Info.plist in Resources */,
 				EEB08C6824E0F0CD006492A8 /* Localizations.strings in Resources */,
 				EE8FA9C524DC4B110041819D /* Assets.xcassets in Resources */,
 				EE8FA9C624DC4B110041819D /* Main.storyboard in Resources */,
-				EE8FA9C824DC4B110041819D /* SportsTracerUAT-Info.plist in Resources */,
-				EE8FA9C924DC4B110041819D /* SportsTracerQA-Info.plist in Resources */,
 				EEB08C7424E0F12E006492A8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
