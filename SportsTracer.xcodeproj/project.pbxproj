@@ -53,7 +53,6 @@
 		EE48CB1924DAEDCB00BD04E1 /* GoalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE090F8E24DAD98A00300A4F /* GoalService.swift */; };
 		EE48CB1D24DAEDD900BD04E1 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */; };
 		EE8FA91A24DC0AFE0041819D /* UIRefreshControl+AutoBeginRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FA91924DC0AFE0041819D /* UIRefreshControl+AutoBeginRefresh.swift */; };
-		EE8FA92324DC36660041819D /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA92824DC36660041819D /* Localizations.strings */; };
 		EE8FA94C24DC417A0041819D /* UIViewController+Enumerate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8FA94B24DC417A0041819D /* UIViewController+Enumerate.swift */; };
 		EE8FA95824DC4A3B0041819D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8FA95724DC4A3B0041819D /* HealthKit.framework */; };
 		EE8FA95E24DC4B030041819D /* NetwortService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADF5A0F24D823EF00BC147A /* NetwortService.swift */; };
@@ -75,7 +74,6 @@
 		EE8FA97024DC4B030041819D /* Pods_SportsTracer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A43D0C6E9378209E1CF449B /* Pods_SportsTracer.framework */; };
 		EE8FA97124DC4B030041819D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8FA95724DC4A3B0041819D /* HealthKit.framework */; };
 		EE8FA97324DC4B030041819D /* SportsTracerDEV-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93924DC40C50041819D /* SportsTracerDEV-Info.plist */; };
-		EE8FA97424DC4B030041819D /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA92824DC36660041819D /* Localizations.strings */; };
 		EE8FA97524DC4B030041819D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
 		EE8FA97624DC4B030041819D /* SportsTracerPROD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93A24DC40C50041819D /* SportsTracerPROD-Info.plist */; };
 		EE8FA97724DC4B030041819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
@@ -101,7 +99,6 @@
 		EE8FA99724DC4B0A0041819D /* Pods_SportsTracer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A43D0C6E9378209E1CF449B /* Pods_SportsTracer.framework */; };
 		EE8FA99824DC4B0A0041819D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8FA95724DC4A3B0041819D /* HealthKit.framework */; };
 		EE8FA99A24DC4B0A0041819D /* SportsTracerDEV-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93924DC40C50041819D /* SportsTracerDEV-Info.plist */; };
-		EE8FA99B24DC4B0A0041819D /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA92824DC36660041819D /* Localizations.strings */; };
 		EE8FA99C24DC4B0A0041819D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
 		EE8FA99D24DC4B0A0041819D /* SportsTracerPROD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93A24DC40C50041819D /* SportsTracerPROD-Info.plist */; };
 		EE8FA99E24DC4B0A0041819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
@@ -127,7 +124,6 @@
 		EE8FA9BE24DC4B110041819D /* Pods_SportsTracer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A43D0C6E9378209E1CF449B /* Pods_SportsTracer.framework */; };
 		EE8FA9BF24DC4B110041819D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8FA95724DC4A3B0041819D /* HealthKit.framework */; };
 		EE8FA9C124DC4B110041819D /* SportsTracerDEV-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93924DC40C50041819D /* SportsTracerDEV-Info.plist */; };
-		EE8FA9C224DC4B110041819D /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA92824DC36660041819D /* Localizations.strings */; };
 		EE8FA9C324DC4B110041819D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DC24D8171800BC147A /* LaunchScreen.storyboard */; };
 		EE8FA9C424DC4B110041819D /* SportsTracerPROD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE8FA93A24DC40C50041819D /* SportsTracerPROD-Info.plist */; };
 		EE8FA9C524DC4B110041819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADF59DA24D8171800BC147A /* Assets.xcassets */; };
@@ -154,6 +150,14 @@
 		EEB08C4E24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */; };
 		EEB08C4F24E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */; };
 		EEB08C5024E0E212006492A8 /* Reward+ModelToEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */; };
+		EEB08C6524E0F0CD006492A8 /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C6A24E0F0CD006492A8 /* Localizations.strings */; };
+		EEB08C6624E0F0CD006492A8 /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C6A24E0F0CD006492A8 /* Localizations.strings */; };
+		EEB08C6724E0F0CD006492A8 /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C6A24E0F0CD006492A8 /* Localizations.strings */; };
+		EEB08C6824E0F0CD006492A8 /* Localizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C6A24E0F0CD006492A8 /* Localizations.strings */; };
+		EEB08C7124E0F12E006492A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C7624E0F12E006492A8 /* InfoPlist.strings */; };
+		EEB08C7224E0F12E006492A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C7624E0F12E006492A8 /* InfoPlist.strings */; };
+		EEB08C7324E0F12E006492A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C7624E0F12E006492A8 /* InfoPlist.strings */; };
+		EEB08C7424E0F12E006492A8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EEB08C7624E0F12E006492A8 /* InfoPlist.strings */; };
 		EEC4C6EE24E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
 		EEC4C6EF24E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
 		EEC4C6F024E02FA500DEF571 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */; };
@@ -200,7 +204,6 @@
 		9D97CBA9629AEB67C113E014 /* Pods_SportsTracerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SportsTracerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF54F60BF1C0366CCAEBB84B /* Pods-SportsTracer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsTracer.debug.xcconfig"; path = "Target Support Files/Pods-SportsTracer/Pods-SportsTracer.debug.xcconfig"; sourceTree = "<group>"; };
 		DE5C0BA424559B6EABBC0FDB /* Pods-SportsTracer-SportsTracerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportsTracer-SportsTracerUITests.release.xcconfig"; path = "Target Support Files/Pods-SportsTracer-SportsTracerUITests/Pods-SportsTracer-SportsTracerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EE090F6E24DAB40B00300A4F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		EE090F7624DAB54000300A4F /* HealthDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataManager.swift; sourceTree = "<group>"; };
 		EE090F8E24DAD98A00300A4F /* GoalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalService.swift; sourceTree = "<group>"; };
 		EE090F9424DADA0200300A4F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -216,7 +219,6 @@
 		EE47A62824DF04020090621A /* Model+ModelToEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+ModelToEntity.swift"; sourceTree = "<group>"; };
 		EE47A62E24DF08110090621A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EE8FA91924DC0AFE0041819D /* UIRefreshControl+AutoBeginRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+AutoBeginRefresh.swift"; sourceTree = "<group>"; };
-		EE8FA92724DC36660041819D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizations.strings"; sourceTree = "<group>"; };
 		EE8FA93724DC40C50041819D /* SportsTracerUAT-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SportsTracerUAT-Info.plist"; sourceTree = "<group>"; };
 		EE8FA93824DC40C50041819D /* SportsTracerQA-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SportsTracerQA-Info.plist"; sourceTree = "<group>"; };
 		EE8FA93924DC40C50041819D /* SportsTracerDEV-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SportsTracerDEV-Info.plist"; sourceTree = "<group>"; };
@@ -231,10 +233,14 @@
 		EEAF1FF424DFF3C600DBDBE9 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		EEB08C4724E0DEAE006492A8 /* Type+ModelToEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Type+ModelToEntity.swift"; sourceTree = "<group>"; };
 		EEB08C4C24E0E212006492A8 /* Reward+ModelToEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reward+ModelToEntity.swift"; sourceTree = "<group>"; };
+		EEB08C5D24E0F05E006492A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		EEB08C5E24E0F05F006492A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		EEB08C6924E0F0CD006492A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizations.strings"; sourceTree = "<group>"; };
+		EEB08C6B24E0F0D2006492A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizations.strings; sourceTree = "<group>"; };
+		EEB08C7524E0F12E006492A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EEB08C7724E0F130006492A8 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		EEC4C6ED24E02FA500DEF571 /* DateUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
 		EEC4C6F724E06BEC00DEF571 /* Pods-SportsTracer-SportsTracerUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Pods-SportsTracer-SportsTracerUITests.xctestplan"; sourceTree = "<group>"; };
-		EEC4C6FD24E06E8D00DEF571 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		EEC4C6FE24E06EFD00DEF571 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizations.strings; sourceTree = "<group>"; };
 		EED398CB24DAE67400D0C0E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EED398D224DAE7F000D0C0E7 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		EED398E224DAEB9900D0C0E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -414,7 +420,8 @@
 			isa = PBXGroup;
 			children = (
 				EE47A60324DEEBC50090621A /* AppSpot.cer */,
-				EE8FA92824DC36660041819D /* Localizations.strings */,
+				EEB08C6A24E0F0CD006492A8 /* Localizations.strings */,
+				EEB08C7624E0F12E006492A8 /* InfoPlist.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -766,13 +773,14 @@
 			files = (
 				EE47A60524DEEBC60090621A /* AppSpot.cer in Resources */,
 				EE8FA97324DC4B030041819D /* SportsTracerDEV-Info.plist in Resources */,
-				EE8FA97424DC4B030041819D /* Localizations.strings in Resources */,
 				EE8FA97524DC4B030041819D /* LaunchScreen.storyboard in Resources */,
 				EE8FA97624DC4B030041819D /* SportsTracerPROD-Info.plist in Resources */,
+				EEB08C6624E0F0CD006492A8 /* Localizations.strings in Resources */,
 				EE8FA97724DC4B030041819D /* Assets.xcassets in Resources */,
 				EE8FA97824DC4B030041819D /* Main.storyboard in Resources */,
 				EE8FA97A24DC4B030041819D /* SportsTracerUAT-Info.plist in Resources */,
 				EE8FA97B24DC4B030041819D /* SportsTracerQA-Info.plist in Resources */,
+				EEB08C7224E0F12E006492A8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,13 +790,14 @@
 			files = (
 				EE47A60624DEEBC60090621A /* AppSpot.cer in Resources */,
 				EE8FA99A24DC4B0A0041819D /* SportsTracerDEV-Info.plist in Resources */,
-				EE8FA99B24DC4B0A0041819D /* Localizations.strings in Resources */,
 				EE8FA99C24DC4B0A0041819D /* LaunchScreen.storyboard in Resources */,
 				EE8FA99D24DC4B0A0041819D /* SportsTracerPROD-Info.plist in Resources */,
+				EEB08C6724E0F0CD006492A8 /* Localizations.strings in Resources */,
 				EE8FA99E24DC4B0A0041819D /* Assets.xcassets in Resources */,
 				EE8FA99F24DC4B0A0041819D /* Main.storyboard in Resources */,
 				EE8FA9A124DC4B0A0041819D /* SportsTracerUAT-Info.plist in Resources */,
 				EE8FA9A224DC4B0A0041819D /* SportsTracerQA-Info.plist in Resources */,
+				EEB08C7324E0F12E006492A8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -798,13 +807,14 @@
 			files = (
 				EE47A60724DEEBC60090621A /* AppSpot.cer in Resources */,
 				EE8FA9C124DC4B110041819D /* SportsTracerDEV-Info.plist in Resources */,
-				EE8FA9C224DC4B110041819D /* Localizations.strings in Resources */,
 				EE8FA9C324DC4B110041819D /* LaunchScreen.storyboard in Resources */,
 				EE8FA9C424DC4B110041819D /* SportsTracerPROD-Info.plist in Resources */,
+				EEB08C6824E0F0CD006492A8 /* Localizations.strings in Resources */,
 				EE8FA9C524DC4B110041819D /* Assets.xcassets in Resources */,
 				EE8FA9C624DC4B110041819D /* Main.storyboard in Resources */,
 				EE8FA9C824DC4B110041819D /* SportsTracerUAT-Info.plist in Resources */,
 				EE8FA9C924DC4B110041819D /* SportsTracerQA-Info.plist in Resources */,
+				EEB08C7424E0F12E006492A8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,7 +822,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE8FA92324DC36660041819D /* Localizations.strings in Resources */,
+				EEB08C6524E0F0CD006492A8 /* Localizations.strings in Resources */,
+				EEB08C7124E0F12E006492A8 /* InfoPlist.strings in Resources */,
 				FADF59DE24D8171800BC147A /* LaunchScreen.storyboard in Resources */,
 				FADF59DB24D8171800BC147A /* Assets.xcassets in Resources */,
 				FADF59D624D8171600BC147A /* Main.storyboard in Resources */,
@@ -1237,20 +1248,29 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE8FA92824DC36660041819D /* Localizations.strings */ = {
+		EEB08C6A24E0F0CD006492A8 /* Localizations.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EE8FA92724DC36660041819D /* zh-Hans */,
-				EEC4C6FE24E06EFD00DEF571 /* en */,
+				EEB08C6924E0F0CD006492A8 /* zh-Hans */,
+				EEB08C6B24E0F0D2006492A8 /* en */,
 			);
 			name = Localizations.strings;
+			sourceTree = "<group>";
+		};
+		EEB08C7624E0F12E006492A8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEB08C7524E0F12E006492A8 /* en */,
+				EEB08C7724E0F130006492A8 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		FADF59D424D8171600BC147A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FADF59D524D8171600BC147A /* Base */,
-				EEC4C6FD24E06E8D00DEF571 /* zh-Hans */,
+				EEB08C5E24E0F05F006492A8 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1259,7 +1279,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FADF59DD24D8171800BC147A /* Base */,
-				EE090F6E24DAB40B00300A4F /* zh-Hans */,
+				EEB08C5D24E0F05E006492A8 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

@@ -6,7 +6,10 @@
 "AJ6-H7-i1k.title" = "概览";
 
 /* Class = "UILabel"; text = "Steps"; ObjectID = "H7L-Gc-9sb"; */
-"H7L-Gc-9sb.text" = "步";
+"H7L-Gc-9sb.text" = "步数";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "HA2-oc-4qT"; */
+"HA2-oc-4qT.text" = "关于";
 
 /* Class = "UILabel"; text = "10"; ObjectID = "HoP-cO-TOt"; */
 "HoP-cO-TOt.text" = "10";
@@ -18,7 +21,7 @@
 "OrL-g5-eh3.text" = "Easy walk steps";
 
 /* Class = "UINavigationItem"; title = "Today Summary"; ObjectID = "TgL-ue-85S"; */
-"TgL-ue-85S.title" = "今日概览";
+"TgL-ue-85S.title" = "今日概况";
 
 /* Class = "UILabel"; text = "325"; ObjectID = "h6f-o6-eeg"; */
 "h6f-o6-eeg.text" = "325";

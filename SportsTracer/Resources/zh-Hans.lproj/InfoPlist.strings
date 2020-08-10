@@ -1,8 +1,8 @@
 /* 
-  Localizations.strings
+  InfoPlist.strings
   SportsTracer
 
   Created by 李进辉 on 2020/8/10.
   Copyright © 2020 HalfRoad Software Inc. All rights reserved.
 */
-"Number of Steps" = "步数";
+CFBundleDisplayName = "运动";

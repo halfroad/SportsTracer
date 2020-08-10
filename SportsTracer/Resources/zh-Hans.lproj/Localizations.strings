@@ -2,7 +2,9 @@
   Localizations.strings
   SportsTracer
 
-  Created by 李进辉 on 2020/8/6.
+  Created by 李进辉 on 2020/8/10.
   Copyright © 2020 HalfRoad Software Inc. All rights reserved.
 */
 "Number of Steps" = "步数";
+"Walking + Running Distance" = "行走距离";
+"Heart Rate" = "心率";

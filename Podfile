@@ -7,7 +7,7 @@ target 'SportsTracer' do
 
   # Pods for SportsTracer
 
-  pod 'PKHUD'
+  pod 'PKHUD',:inhibit_warnings => true
 
   target 'SportsTracerTests' do
     inherit! :search_paths
