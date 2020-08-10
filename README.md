@@ -6,7 +6,7 @@ This project aims to the 3rd phase of the Interview initiated by a very prestige
 
 In addition, a RestFul API should be called for the purpose of synchronising with backend, https://somedomain.com/_ah/api/myApi/v1/goals.
 
-# prerequisites
+# Prerequisites
 If the user first launch the app, an authorisation window will be displayed to ask the user to allow the app to read/write health records in your device.
 
 Please allow, and had better tick all the permissions. Otherwise, you will not be able to see the health data.
