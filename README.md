@@ -52,6 +52,8 @@ I understand that running and debugging the applications against a real device i
 
 As mentioned above, there are multiple targets in the project, my account does not have the permissions to create Capability of HKHealthKit. So I only debugged the app with Simulator. There could be some issues in real device. But most cases, it works for us.
 
+# Ending
+
 Really appreciate the great opportunity, looking forward to contributing the COMPANY!
 
 Thank you,
